@@ -1,0 +1,158 @@
+#eye-catch {
+    margin: auto;
+    max-width: 70rem;
+    margin: 3rem auto 4rem auto;
+}
+
+main h1#big-text {
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 900;
+    padding: 0;
+    margin: 3rem auto;
+}
+
+#cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+a.card-wrapper {
+    display: block;
+    padding: 0;
+    border: .2rem solid #1c2021;
+    width: 23.5%;
+    height: 19.5rem;
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+/*    border: 1px solid brown; */
+    height: 100%;
+    background-position: center 38%, 0 0;
+    background-size: 75%, 100%;
+    background-repeat: no-repeat;
+    transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+/* card hover create shadow effect. can inverse so shadow is constant on card, hover removes shadow */
+.card:hover {
+    box-shadow: 0 0 0 #1c2021;
+}
+
+.card:active {
+    box-shadow: 0 0 0 #1c2021;
+    transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+/* .card, [style^="background-"] {
+    isolation: isolate;
+} excludes card from sandoche's darkmode.js. cannot seem to make card-text not inherit exclusion tho */ 
+
+p.card-text {
+    text-align: center;
+    color: #1c2021;
+    padding: .5em 0 .5em 0;
+    width: 100%;
+    margin: 0;
+    font-size: 1.5rem;
+    border-top: .2rem solid #1c2021;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #f4f5f6;
+}
+
+/* blurb section */
+#blurb {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 60rem;
+    margin: 0 auto 3em auto;
+    padding: 0;
+}
+
+#blurb h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 1.5rem auto;
+}
+
+#blurb p {
+    text-align: center;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+a#fancy-about {
+    margin: 0 auto;
+}
+
+a#fancy-about {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+a#fancy-about:active {
+    transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+/* 800px media query for laptop/tablet card grid and smaller screens */
+@media screen and (max-width: 800px) {
+    #eye-catch {
+        max-width: 85vw;
+        margin: 0 auto 1.5rem auto;
+        padding: 0;
+    }
+
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 2.5%;
+        padding-bottom: 3rem;
+    }
+
+    a.card-wrapper {
+        display: block;
+        padding: 0;
+        width: 98%;
+        height: 15rem;
+        text-decoration: none;
+        margin: auto;
+    }
+
+    p.card-text {
+        font-size: 1.25rem;
+    }
+
+    main h1#big-text {
+        text-align: center;
+        font-size: 3.4rem;
+        font-weight: 900;
+        padding: 0;
+        margin: .25rem 0 1rem 0;
+    }
+
+    #blurb {
+        display: flex;
+        flex-flow: column nowrap;
+        max-width: 85vw; /* match with #eye-catch max-width */
+        margin: 0 auto 3em auto;
+        padding: 0;
+    }
+}

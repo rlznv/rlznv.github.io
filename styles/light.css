@@ -1,0 +1,193 @@
+#switch {
+    background-image: url("/img/moon.svg");
+    height: 3rem;
+    width: 3rem; 
+    background-color: #f4f5f6;
+    background-repeat: no-repeat;
+    background-size: 2em 2em;
+    background-position: center;
+    position: fixed;
+    bottom: .5rem;
+    right: .5rem;
+    border: .15rem solid #1c2021;
+    transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+#switch:hover {
+    cursor: pointer;
+    background-color: #5465FF;
+    box-shadow: .25rem .25rem 0 #1c2021;
+}
+
+#switch:active {
+    box-shadow: 0 0 0 #1c2021;
+    transition: box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+.f-title {
+    color: #384042;
+} 
+
+a.inline-link {
+    color: #1c2021;
+}
+
+a.inline-link:hover {
+    color: #f4f5f6;
+}
+
+a.inline-link.external:hover {
+    color: #f4f5f6;
+    background-color: #1c2021;
+}
+
+/* index page */
+
+h1#big-text {
+    color: #1c2021;
+    box-shadow: .2rem .2rem 0 #1c2021;
+    border: .2rem solid #1c2021;
+}
+
+.card {
+    box-shadow: .45rem .45rem 0 #1c2021;
+}
+
+#card-html {
+    background-image: url(/img/html-card.svg), linear-gradient(45deg, #e54b4b 0%,#e54b4b 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #e54b4b 91%);
+}
+
+#card-css {
+    background-image: url(/img/css-card.svg), linear-gradient(45deg, #95C41C 0%,#95C41C 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #95C41C 91%);
+}
+
+#card-js {
+    background-image: url(/img/js-card.svg), linear-gradient(45deg, #9381ff 0%,#9381ff 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #9381ff 91%);
+}
+
+#card-more {
+    background-image: url(/img/more-card.svg), linear-gradient(45deg, #00B899 0%,#00B899 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #00B899 91%);
+}
+
+a#fancy-about {
+    color: #1c2021;
+    border: .2rem solid #1c2021;
+    background-image: linear-gradient(45deg, #0496FF 0%,#0496FF 10%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, #0496FF 90%);
+    box-shadow: .2rem .2rem 0 #1c2021;
+}
+
+a#fancy-about:hover {
+    color: #f4f5f6;
+    background-color: #0496FF;
+    box-shadow: 0 0 0 #1c2021;
+}
+
+a#fancy-about:active {
+    box-shadow: 0 0 0 #1c2021;
+}
+
+/* base-info */
+
+main h1.info-h1 {
+    border: .2rem solid #1c2021;
+    box-shadow: .25rem .25rem 0 #1c2021;
+}
+
+.code-text {
+    border: .2rem solid #1c2021;
+    box-shadow: .25rem .25rem 0 #1c2021;
+}
+
+.js-code {
+    background-color: #9381ff;
+}
+
+figure {
+    border: .2rem solid #1c2021;
+    box-shadow: .25rem .25rem 0 #1c2021;
+}
+.css-code {
+    background-color: #95C41C;
+}
+
+.html-code {
+    background-color: #e54b4b;
+}
+
+.info-sect h3 {
+    color: #262A2C;
+}
+
+/* breadcrumb */
+ul.breadcrumb li a {
+    color: #1c2021;
+}
+
+/* table of contents */
+.toc-wrapper {
+    background-color: #f4f5f6;
+    border: .2rem solid #1c2021;
+    box-shadow: .2rem .2rem 0 #1c2021;
+}
+
+ul.toc li a {
+    color: #1c2021;
+}
+
+ul.toc li a:hover {
+    color: #f4f5f6;
+    background-color: #1c2021;
+}
+
+/* exam page */
+.exam-header {
+    border: .2rem solid #1c2021;
+    box-shadow: .2rem .2rem 0 #1c2021;
+    width: fit-content;
+}
+
+.exam-qa {
+    border: .2rem solid #1c2021;
+    box-shadow: .2rem .2rem 0 #1c2021;
+}
+
+/* landing pages cards */
+.mainguide.card-html {
+    background-image: url(/img/more-card.svg), linear-gradient(45deg, #e54b4b 0%,#e54b4b 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #e54b4b 91%);
+}
+
+.tricky.card-html {
+    background-image: url(/img/placeholder.svg), linear-gradient(45deg, #e54b4b 0%,#e54b4b 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #e54b4b 91%);
+}
+
+.mainguide.card-css {
+    background-image: url(/img/more-card.svg), linear-gradient(45deg, #95C41C 0%,#95C41C 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #95C41C 91%);
+}
+
+.tricky.card-css {
+    background-image: url(/img/placeholder.svg), linear-gradient(45deg, #95C41C 0%,#95C41C 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #95C41C 91%);
+}
+
+.flexbox.card-css {
+    background-image: url(/img/more-card.svg), linear-gradient(45deg, #95C41C 0%,#95C41C 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #95C41C 91%);
+}
+
+.grid.card-css {
+    background-image: url(/img/placeholder.svg), linear-gradient(45deg, #95C41C 0%,#95C41C 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #95C41C 91%);
+}
+
+.mainguide.card-js {
+    background-image: url(/img/more-card.svg), linear-gradient(45deg, #9381ff 0%,#9381ff 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #9381ff 91%);
+}
+
+.tricky.card-js {
+    background-image: url(/img/placeholder.svg), linear-gradient(45deg, #9381ff 0%,#9381ff 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #9381ff 91%);
+}
+
+.exam-prep.card-more {
+    background-image: url(/img/more-card.svg), linear-gradient(45deg, #00B899 0%,#00B899 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #00B899 91%);
+}
+
+.helpful-tools.card-more {
+    background-image: url(/img/placeholder.svg), linear-gradient(45deg, #00B899 0%,#00B899 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #00B899 91%);
+}

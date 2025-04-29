@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>[TITLE]</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/styles/base.css">
+    <link rel="stylesheet" type="text/css" href="/styles/base-info.css">
+    <link rel="stylesheet" id="theme" type="text/css" href="styles/light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/js/js-init.js"></script>
+    <script src="/js/darkmode.js"></script>
+    <script src="/js/dropmenu.js"></script>
+    <script src="/js/hamburger.js"></script>
+  </head>
+  
+  <body >
+
+    <header> 
+      <a href="/" id="h-name"><h1 id="site-name">&lt;TagTutor&gt;</h1></a>
+
+      <nav id="h-nav" aria-label="desktop-nav">
+        <p class="nav-link" id="nav-html">HTML</p>
+        <p class="nav-link" id="nav-css">CSS</p>
+        <p class="nav-link" id="nav-js">JavaScript</p>
+        <p class="nav-link" id="nav-more">More Resources</p>
+        <a class="nav-link" id="nav-about" href="/about.html">About</a>
+      </nav>
+
+      <nav id="mobile-nav" aria-label="mobile-nav">
+        <a class="mobile-link" id="mobile-html" href="/html/">HTML</a>
+        <a class="mobile-link" id="mobile-css" href="/css/">CSS</a>
+        <a class="mobile-link" id="mobile-js" href="/javascript/">JavaScript</a>
+        <a class="mobile-link" id="mobile-more" href="/more/">More Resources</a>
+        <a class="mobile-link" id="mobile-about" href="/about.html">About</a>
+      </nav>
+
+      <div id="burger" onclick="toggleBurger()"></div>
+
+      <div id="switch" title="Switch themes" onclick="toggleTheme()"></div>
+
+    </header>
+
+    <div id="drop-container">
+      <div class="nav-drop" id="html-drop">
+        <a class="nav-drop-link" href="/html">HTML Home</a>
+        <a class="nav-drop-link" href="/html">HTML Main Guide</a>
+        <a class="nav-drop-link" href="/html">HTML Tricky Concepts</a>
+      </div>
+      <div class="nav-drop" id="css-drop">
+        <a class="nav-drop-link" href="/css/">CSS Home</a>
+        <a class="nav-drop-link" href="/css">CSS Main Guide</a>
+        <a class="nav-drop-link" href="/css">CSS Grid</a>
+        <a class="nav-drop-link" href="/css">CSS Flexbox</a>
+        <a class="nav-drop-link" href="/css">CSS Tricky Concepts</a>
+      </div>
+      <div class="nav-drop" id="js-drop">
+        <a class="nav-drop-link" href="/javascript">JavaScript Home</a>
+        <a class="nav-drop-link" href="/javascript">JavaScript Main Guide</a>
+        <a class="nav-drop-link" href="/javascript">JavaScript Tricky Concepts</a>
+      </div>
+      <div class="nav-drop" id="more-drop">
+        <a class="nav-drop-link" href="/more">More Resources Home</a>
+        <a class="nav-drop-link" href="/more">Exam Prep</a>
+        <a class="nav-drop-link" href="/more">External Resources</a>
+      </div>
+    </div>
+
+    <main>
+      <h1 class="info-h1">About Us</h1>
+      <section class="info-sect">
+        <h2 class="exam-header">Who are we?</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+
+        <h2 class="exam-header">Why did we make TagTutor?</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+
+        <h2 class="exam-header">Where did we get our content?</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+
+        <h2 class="exam-header">Creative Commons attributions</h2>
+        <p>
+          TagTutor utilizes images licensed under the <a href="#" class="inline-link external">Creative Commons License</a> or from the <a href="https://creativecommons.org/public-domain/" class="inline-link external">public domain</a>. All images on TagTutor licensed under the Creative Commons License or from the public domain have been modified to match the design and color palette of the website.
+        </p>
+        <p>
+          Utilized images licensed under the <a href="#" class="inline-link external">Creative Commons License</a> are listed below.
+        </p>
+        <ul>
+          <li><a href="https://game-icons.net/1x1/delapouite/hamburger-menu.html" class="inline-link external">Hamburger menu icon</a> by Delapouite</li>
+          <li><a href="https://www.svgrepo.com/svg/521184/more-horizontal" class="inline-link external">More Horizontal SVG Vector</a> by Giovana</li>
+          <li><a href="https://www.svgrepo.com/svg/508795/css3-02" class="inline-link external">Css3 02 SVG Vector</a> by Pictonic</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="f-stack" id="f-h-a">
+        <a class="f-link" href="/index.html">Home</a>
+        <a class="f-link" href="/about.html">About</a>
+      </div>
+      
+      <div class="f-stack" id="f-html">
+        <p class="f-title">HTML</p>
+        <a class="f-link" href="/html/index.html">HTML Home</a>
+        <a class="f-link" href="/html/main.html">HTML Main Guide</a>
+        <a class="f-link" href="/html/tricky.html">HTML Tricky Concepts</a>
+      </div>
+
+      <div class="f-stack" id="f-css">
+        <p class="f-title">CSS</p>
+        <a class="f-link" href="/css/index.html">CSS Home</a>
+        <a class="f-link" href="/css/main.html">CSS Main Guide</a>
+        <a class="f-link" href="/css/grid.html">CSS Grid</a>
+        <a class="f-link" href="/css/flexbox.html">CSS Flexbox</a>
+        <a class="f-link" href="/css/tricky.html">CSS Tricky Concepts</a>
+      </div>
+      
+      <div class="f-stack" id="f-js">
+        <p class="f-title">JavaScript</p>
+        <a class="f-link" href="/javascript/index.html">JavaScript Home</a>
+        <a class="f-link" href="/javascript/main.html">JavaScript Main Guide</a>
+        <a class="f-link" href="/javascript/tricky.html">JavaScript Tricky Concepts</a>
+      </div>
+      
+      <div class="f-stack" id="f-more">
+        <p class="f-title">More Resources</p>
+        <a class="f-link" href="/more/index.html">More Resources Home</a>
+        <a class="f-link" href="/more/exam-prep.html">Exam Prep</a>
+        <a class="f-link" href="/more/external-res.html">External Resources</a>
+      </div>
+    </footer>
+  
+  </body>
+  
+</html>

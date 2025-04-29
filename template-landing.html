@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>[TITLE]</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/index-landing.css">
+    <link rel="stylesheet" id="theme" type="text/css" href="styles/light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/js/js-init.js"></script>
+    <script src="/js/darkmode.js"></script>
+    <script src="/js/dropmenu.js"></script>
+    <script src="/js/hamburger.js"></script>
+  </head>
+  
+  <body >
+
+    <header> 
+      <a href="/" id="h-name"><h1 id="site-name">&lt;TagTutor&gt;</h1></a>
+
+      <nav id="h-nav" aria-label="desktop-nav">
+        <p class="nav-link" id="nav-html">HTML</p>
+        <p class="nav-link" id="nav-css">CSS</p>
+        <p class="nav-link" id="nav-js">JavaScript</p>
+        <p class="nav-link" id="nav-more">More Resources</p>
+        <a class="nav-link" id="nav-about" href="/about.html">About</a>
+      </nav>
+
+      <nav id="mobile-nav" aria-label="mobile-nav">
+        <a class="mobile-link" id="mobile-html" href="/html/">HTML</a>
+        <a class="mobile-link" id="mobile-css" href="/css/">CSS</a>
+        <a class="mobile-link" id="mobile-js" href="/javascript/">JavaScript</a>
+        <a class="mobile-link" id="mobile-more" href="/more/">More Resources</a>
+        <a class="mobile-link" id="mobile-about" href="/about.html">About</a>
+      </nav>
+
+      <div id="burger" onclick="toggleBurger()"></div>
+
+      <div id="switch" title="Switch themes" onclick="toggleTheme()"></div>
+
+    </header>
+
+    <div id="drop-container">
+      <div class="nav-drop" id="html-drop">
+        <a class="nav-drop-link" href="/html">HTML Home</a>
+        <a class="nav-drop-link" href="/html">HTML Main Guide</a>
+        <a class="nav-drop-link" href="/html">HTML Tricky Concepts</a>
+      </div>
+      <div class="nav-drop" id="css-drop">
+        <a class="nav-drop-link" href="/css/">CSS Home</a>
+        <a class="nav-drop-link" href="/css">CSS Main Guide</a>
+        <a class="nav-drop-link" href="/css">CSS Grid</a>
+        <a class="nav-drop-link" href="/css">CSS Flexbox</a>
+        <a class="nav-drop-link" href="/css">CSS Tricky Concepts</a>
+      </div>
+      <div class="nav-drop" id="js-drop">
+        <a class="nav-drop-link" href="/javascript">JavaScript Home</a>
+        <a class="nav-drop-link" href="/javascript">JavaScript Main Guide</a>
+        <a class="nav-drop-link" href="/javascript">JavaScript Tricky Concepts</a>
+      </div>
+      <div class="nav-drop" id="more-drop">
+        <a class="nav-drop-link" href="/more">More Resources Home</a>
+        <a class="nav-drop-link" href="/more">Exam Prep</a>
+        <a class="nav-drop-link" href="/more">External Resources</a>
+      </div>
+    </div>
+
+    <main>
+      <section id="eye-catch">
+        <h1 id="landing-text">Where do you want to go?</h1>
+        <div id="cards">
+          <a href="/html/" class="card-wrapper">
+            <div class="card" id="card-html">
+              <p class="card-text">[item] Main Guide</p>
+            </div>
+          </a>
+          <a href="/html/" class="card-wrapper">
+            <div class="card" id="card-html">
+              <p class="card-text">[item] Tricky Concepts</p>
+            </div>
+          </a>
+          <a href="/html/" class="card-wrapper">
+            <div class="card" id="card-html">
+              <p class="card-text">[item]</p>
+            </div>
+          </a>
+          <a href="/html/" class="card-wrapper">
+            <div class="card" id="card-html">
+              <p class="card-text">[item]</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section id="blurb">
+        <h2>Welcome to the [HTML] section</h2>
+        <p>Here, you'll find [item], [item], and [item].</p>
+      </section>
+    </main>
+
+    <footer>
+<!-- footer element will contain: site map nav links (possibly: back to top button) -->
+      <div class="f-stack" id="f-h-a">
+        <a class="f-link url-current" href="/index.html">Home</a>
+        <a class="f-link" href="/about.html">About</a>
+      </div>
+      
+      <div class="f-stack" id="f-html">
+        <p class="f-title">HTML</p>
+        <a class="f-link" href="/html/">item</a>
+        <a class="f-link" href="/html/">Tricky Concepts</a>
+      </div>
+
+      <div class="f-stack" id="f-css">
+        <p class="f-title">CSS</p>
+        <a class="f-link" href="/css/">item</a>
+        <a class="f-link" href="/css/">item</a>
+      </div>
+      
+      <div class="f-stack" id="f-js">
+        <p class="f-title">JavaScript</p>
+        <a class="f-link" href="/javascript/">item</a>
+        <a class="f-link" href="/javascript/">item</a>
+      </div>
+      
+      <div class="f-stack" id="f-more">
+        <p class="f-title">More Resources</p>
+        <a class="f-link" href="/more/">item</a>
+        <a class="f-link" href="/more/">item</a>
+      </div>
+    </footer>
+  
+  </body>
+  
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>[TITLE]</title>
+    <link rel="stylesheet" type="text/css" href="/styles/base.css">
+    <link rel="stylesheet" type="text/css" href="/styles/base-info.css">
+    <link rel="stylesheet" id="theme" type="text/css" href="/styles/light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/js/js-init.js"></script>
+    <script src="/js/darkmode.js"></script>
+    <script src="/js/dropmenu.js"></script>
+    <script src="/js/hamburger.js"></script>
+  </head>
+  
+  <body >
+
+    <header> 
+      <a href="/" id="h-name"><h1 id="site-name">&lt;TagTutor&gt;</h1></a>
+
+      <nav id="h-nav" aria-label="desktop-nav">
+        <p class="nav-link" id="nav-html">HTML</p>
+        <p class="nav-link" id="nav-css">CSS</p>
+        <p class="nav-link" id="nav-js">JavaScript</p>
+        <p class="nav-link" id="nav-more">More Resources</p>
+        <a class="nav-link" id="nav-about" href="/about.html">About</a>
+      </nav>
+
+      <nav id="mobile-nav" aria-label="mobile-nav">
+        <a class="mobile-link" id="mobile-html" href="/html/">HTML</a>
+        <a class="mobile-link" id="mobile-css" href="/css/">CSS</a>
+        <a class="mobile-link" id="mobile-js" href="/javascript/">JavaScript</a>
+        <a class="mobile-link" id="mobile-more" href="/more/">More Resources</a>
+        <a class="mobile-link" id="mobile-about" href="/about.html">About</a>
+      </nav>
+
+      <div id="burger" onclick="toggleBurger()"></div>
+
+      <div id="switch" title="Switch themes" onclick="toggleTheme()"></div>
+
+    </header>
+
+    <div id="drop-container">
+      <div class="nav-drop" id="html-drop">
+        <a class="nav-drop-link" href="/html">HTML Home</a>
+        <a class="nav-drop-link" href="/html">HTML Main Guide</a>
+        <a class="nav-drop-link" href="/html">HTML Tricky Concepts</a>
+      </div>
+      <div class="nav-drop" id="css-drop">
+        <a class="nav-drop-link" href="/css/">CSS Home</a>
+        <a class="nav-drop-link" href="/css">CSS Main Guide</a>
+        <a class="nav-drop-link" href="/css">CSS Grid</a>
+        <a class="nav-drop-link" href="/css">CSS Flexbox</a>
+        <a class="nav-drop-link" href="/css">CSS Tricky Concepts</a>
+      </div>
+      <div class="nav-drop" id="js-drop">
+        <a class="nav-drop-link" href="/javascript">JavaScript Home</a>
+        <a class="nav-drop-link" href="/javascript">JavaScript Main Guide</a>
+        <a class="nav-drop-link" href="/javascript">JavaScript Tricky Concepts</a>
+      </div>
+      <div class="nav-drop" id="more-drop">
+        <a class="nav-drop-link" href="/more">More Resources Home</a>
+        <a class="nav-drop-link" href="/more">Exam Prep</a>
+        <a class="nav-drop-link" href="/more">External Resources</a>
+      </div>
+    </div>
+
+    <main>
+
+      <ul class="breadcrumb">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/more/">More Resources</a></li>
+        <li><a href="/more/tools.html">External Resources</a></li>
+      </ul> 
+
+      <h1 class="info-h1 title-more">External Resources</h1>
+
+      <section class="info-sect">
+        
+        <h2>PAGE UNDER CONSTRUCTION</h2>
+        <h2>Helpful Tools and External Resources</h2>
+        <p>
+          On this page, you'll find links to tools and resources to assist you in your HTML, CSS, and JavaScript journey. These tools and resources were chosen to help students both learn introductory front-end web design concepts<em> and </em>provide "I am making a website right now and need help" tools. Another factor in selecting these tools and resources were their accessibility and functionality. The core functionalities of these tools and resources are provided without charge or required account creation. 
+        </p>
+        <p>
+          It is important to note that many of the links on this page will be sorted into the category that best fits them. There are inevitable overlaps between HTML, CSS, and JavaScript, so don't take our categorizations as law. 
+        </p>
+        <p>
+          Note: TagTutor is not sponsored by nor affiliated with any listed tools or resources. While the team at TagTutor curated these tools and resources, use the provided tools and resources at your own risk.
+        </p>
+        <article class="toc-wrapper">
+          <h3 class="toc-title">Table of Contents</h3>
+          <ul class="toc">
+            <li><a class="toc-link" href="#gen-tools">General Tools and Resources</a></li>
+            <li><a class="toc-link" href="#html-tools">HTML Tools and Resources</a></li>
+            <li><a class="toc-link" href="#css-tools">CSS Tools and Resources</a></li>
+            <li><a class="toc-link" href="#js-tools">JavaScript Tools and Resources</a></li>
+          </ul>
+        </article>
+
+        <h3 class="exam-header" id="gen-tools">General Tools and Resources</h3>
+        <p>
+          I am placeholder text. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        </p>
+
+        <dl>
+          <dt><a href="#" class="inline-link external">MDN Web Docs</a></dt>
+            <dd>Formally known as the Mozilla Developer Network and the Mozilla Development center, MDN docs is an open-source documentation repository for web development technologies. The website provides resources to learn HTML, CSS, and JavaScript, as well as references for accessibility, web APIs, web extensions, and other types of web technologies.</dd>
+            <dd>Use MDN Web Docs as reference while you're building your website, or learn from its educational modules.</dd>
+          <dt><a href="#" class="inline-link external">W3Schools</a></dt>
+            <dd>W3Schools is a popular beginner resource for learning HTML, CSS, JavaScript, and more. Despite its name, W3Schools is not officially associated with the World Wide Web Consortium (W3C). The website provides step by step tutorials, reference documentation, and interactive quizzes for beginner learners of various front-end and back-end web development technologies.</dd>
+            <dd>Use W3Schools as reference while you're building your website, or learn from its educational modules, tutorials, and quizzes.</dd>
+          <dt><a href="https://www.w3docs.com/" class="inline-link external">W3docs</a></dt>
+            <dd>Similar to W3Schools and MDN Web Docs, W3docs is a web development learning resources for beginners to intermediates. Despite its name, W3docs is also not officially associated with the World Wide Web Consortium (W3C).</dd>
+            <dd>Use W3docs to learn through its interactive quizzes and exercises, example code snippets, and various web development tools like color mixers and CSS makers.</dd>
+          <dt><a href="https://tympanus.net/codrops/" class="inline-link external">Codrops</a></dt>
+            <dd>Codrops is a website that for web design enthusiasts and developers looking for inspiration and innovation in interactive web design. The website features a rich collection of developer spotlights, interactive demonstrations, highlights, and articles about web development.</dd>
+            <dd>Use Codrops to find inspiration for your projects from CSS effects to JavaScript libraries to bring your project to the next level. </dd>
+          <dt><a href="#" class="inline-link external"><em>Practical Typography</em> by Matthew Butterick</a></dt>
+            <dd><em>Practical Typography</em> is a web-based book on typography written by Matthew Butterick, a writer, typographer, programmer, and lawyer. The book provides key rules and quick lessons on typographic concepts for people who want practical, straightforward (and opinionated) rules for good typography.</dd>
+            <dd>Use <em>Practical Typography</em> to learn the key rules of typography and elevate the appearance of your website's text.</dd>
+          <dt><a href="#" class="inline-link external">NN/g</a></dt>
+            <dd>The Nielsen Norman Group, stylized as NN/g, is a consulting firm that specializes in user experience (UX) design. Its website hosts a library of free articles and videos on the field of UX and how to best design web pages with user experience in mind.</dd>
+            <dd>Use NN/g's library of free articles to learn the best practices for designing web pages that are both appealing and pleasant to use.</dd>
+          <dt><a href="#" class="inline-link external">GeeksforGeeks</a></dt>
+            <dd>GeeksforGeeks is a comprehensive education resource that covers fields from computer science to programming to web technologies. While GeeksforGeeks provides introductory resources for front-end beginners like its <a href="https://www.geeksforgeeks.org/html-cheat-sheet/" class="inline-link external">HTML Cheat sheet</a>, the site provides information that goes beyond the basics.</dd>
+            <dd>Use GeeksforGeeks to learn all about how to bring your front-end and/or back-end skills to a new level.</dd>
+          <dt><a href="#" class="inline-link external">Prettier</a></dt>
+            <dd>Prettier is an opinionated code format that formats code into a consistent style. Prettier is opinionated, meaning it uses its own format, not allowing users full customization over code formatting.</dd>
+            <dd>Use Prettier to clean up your code's appearance and make it look "pretty." (For anyone working on a group project, this may be a good tool for you!)</dd>
+          <dt><a href="https://coolors.co/" class="inline-link external">Coolors</a></dt>
+            <dd>Coolors is a color palette generator with features like contrast ratio checking, community palette collections, and palette saving. Coolors also has tools like its gradient maker, gradient collection, and image converter.</dd> 
+            <dd>Use Coolors to quickly generate a color palette for whatever design you need. </dd>
+          <dt><a href="https://caniuse.com/" class="inline-link external">Can I Use</a></dt>
+            <dd>Can I Use is a website that provides up-to-date information on browser support for front-end web technologies. Can I Use provides percentages of users whose browsers support a certain feature, as well as list the supported versions of the supported browsers.</dd>
+            <dd>Use Can I Use to ensure that your website works for whoever views it.</dd>
+        </dl>
+
+        <h3 class="exam-header title-html" id="html-tools">HTML Tools and Resources</h3>
+        <p>
+          I am placeholder text. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        </p>
+
+        <dl>
+          <dt><a href="https://validator.w3.org/" class="inline-link external">W3C's Markup Validation Service</a></dt>
+            <dd>W3C's Markup Validation Service allows users to validate their HTML by providing a URI to the CSS document, by uploading a file, or by directly inputting the markup into a web form. Validation ensures that the markup is compliant with the official guidelines set out by W3C.</dd>
+           <dd>Use the W3C's official markup validator to validate your HTML files.</dd>
+           <dt><a href="https://www.shapedivider.app/" class="inline-link external">Shape Divider</a></dt>
+           <dd>Shape Divider is a browser-based shape generator that allows users to create custom SVG dividers to add to websites. Users can customize the divider's shape, color, height, and more, using Shape Divider's interactive generator.</dd>
+          <dd>Use Shape Divider to create custom SVG decorations for your websites.</dd>
+        </dl>
+
+        <h3 class="exam-header title-css" id="css-tools">CSS Tools and Resources</h3>
+        <p>
+          I am placeholder text. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        </p>
+
+        <dl>
+          <dt><a href="https://jigsaw.w3.org/css-validator/" class="inline-link external">W3C's CSS Validation Service</a></dt>
+            <dd>W3C's CSS Validation Service allows users to validate their CSS by providing a URI to the CSS document, by uploading a file, or by directly inputting the CSS into a web form. Validation ensures that the CSS is compliant with the official guidelines set out by W3C.</dd>
+            <dd>Use the W3C's official CSS validator to validate your CSS.</dd>
+          <dt><a href="https://cssgridgenerator.io/" class="inline-link external">CSS Grid Generator</a></dt>
+            <dd>CSS Grid Generator is an interactive, browser-based tool that allows users to create custom grids. After creating a custom grid, users can examine and copy the generated HTML and CSS code.</dd>
+            <dd>Use CSS Grid Generator to interactively learn how CSS grid works, or use just it to save the headache of setting up a complex grid.</dd>
+          <dt><a href="https://flexboxfroggy.com/" class="inline-link external">Flexbox Froggy</a></dt>
+            <dd>Flexbox Froggy is a game all about moving a frogs onto lilypads, teaching players how to use CSS flexbox. The game requires players to utilize different flexbox container and flexbox item properties to affect the location of frogs.</dd>
+            <dd>Use Flexbox Froggy to learn the basics of CSS Flexbox and how items flow in a flex container.</dd>
+            <dt><a href="https://cssgridgarden.com/" class="inline-link external">Grid Garden</a></dt>
+            <dd>Grid Garden is like Flexbox Froggy. Grid Garden is a game all about moving a water onto crops, teaching players how to use CSS flexbox. The game requires players to utilize different grid container and grid item properties to affect the location of the water square.</dd>
+            <dd>Use Grid Garden to learn the basics of CSS grid and how to move items in a grid container.</dd>
+          <dt><a href="https://enjeck.com/btns/" class="inline-link external">btns</a></dt>
+            <dd>btns is an open-source button designs with hover effects. Click on the button design to see the HTML and CSS involved in creating and styling the button.</dd>
+            <dd>Use btns to elevate your button designs on whatever projects you make.</dd>
+          <dt><a href="https://css-tricks.com/" class="inline-link external">CSS-Tricks</a></dt>
+            <dd>CSS-Tricks is a website dedicated to CSS. From guides and news to inspiration and tutorials, CSS-Tricks is a treasure trove of CSS-related information.</dd>
+            <dd>Use CSS-Tricks to learn the fundamentals of CSS or take your CSS to the next level.</dd>
+          <dt><a href="https://flexbox.help/" class="inline-link external">flexbox.help</a></dt>
+            <dd>Use flexbox.help to test CSS flexbox rules using the website's interactive flexbox model. Users can add or remove flexbox items, change the flex direction, and more.</dd>
+            <dd>Use flexbox.help to interactively learn how CSS flexbox container properties affect the alignment and flow of child items.</dd>
+        </dl>
+        
+        <h3 class="exam-header title-js" id="js-tools">JavaScript Tools and Resources</h3>
+        <p>
+          I am placeholder text. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        </p>
+
+        <ul>
+          <li>item</li>
+          <li>item</li>
+          <li>item</li>
+          <li>item</li>
+        </ul>
+
+      </section>
+    </main>
+
+    <footer>
+      <div class="f-stack" id="f-h-a">
+        <a class="f-link" href="/index.html">Home</a>
+        <a class="f-link" href="/about.html">About</a>
+      </div>
+      
+      <div class="f-stack" id="f-html">
+        <p class="f-title">HTML</p>
+        <a class="f-link" href="/html/">HTML Landing Page</a>
+        <a class="f-link" href="/html/">HTML Main Guide</a>
+        <a class="f-link" href="/html/">HTML Tricky Concepts</a>
+      </div>
+
+      <div class="f-stack" id="f-css">
+        <p class="f-title">CSS</p>
+        <a class="f-link" href="/css/">CSS Landing Page</a>
+        <a class="f-link" href="/css/">CSS Main Guide</a>
+        <a class="f-link" href="/css/">CSS Grid</a>
+        <a class="f-link" href="/css/">CSS Flexbox</a>
+        <a class="f-link" href="/css/">CSS Tricky Concepts</a>
+      </div>
+      
+      <div class="f-stack" id="f-js">
+        <p class="f-title">JavaScript</p>
+        <a class="f-link" href="/javascript/">JavaScript Landing Page</a>
+        <a class="f-link" href="/javascript/">JavaScript Main Guide</a>
+        <a class="f-link" href="/javascript/">JavaScript Tricky Concepts</a>
+      </div>
+      
+      <div class="f-stack" id="f-more">
+        <p class="f-title">More Resources</p>
+        <a class="f-link" href="/more/">More Resources Landing Page</a>
+        <a class="f-link" href="/more/">Exam Prep</a>
+        <a class="f-link" href="/more/">External Resources</a>
+      </div>
+    </footer>
+  
+  </body>
+  
+</html>

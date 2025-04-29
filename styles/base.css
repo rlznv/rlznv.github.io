@@ -1,0 +1,366 @@
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: #1c2021;
+    background-color: #f4f5f6;
+    position: absolute;
+    width: 100%;
+    margin-inline: auto;
+    left: 0;
+    right: 0;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    min-height: 10vh;
+    border-bottom: .13rem solid #1c2021;
+}
+
+main {
+    padding: 0 1rem;
+}
+
+figure#h-logo {
+    margin: auto;
+    height: 10vh;
+    width: 10vh;
+    padding: 0 2rem;
+}
+
+#h-logo img {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+a#h-name {
+    color: #1c2021;
+    text-decoration: none;
+    margin: auto;
+}
+
+a#h-name:hover {
+    color: #1c2021;
+    background-color: none;
+    text-decoration: underline;
+}
+
+h1#site-name {
+    padding: 0 2rem;
+    font-size: 2rem;
+}
+
+nav#h-nav {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+#burger {
+    display: none;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+/* nav drop down menu. remove rules from #drop-container to make nav-drops push down page */
+#drop-container {
+    max-height: 12rem;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    margin-inline: auto;
+    left: 0;
+    right: 0;
+}
+
+.nav-drop {
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: display .4s ease, max-height .4s ease, backgroud-color .4s ease;
+    background-color: #f4f5f6;
+}
+
+.nav-drop.active {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: stretch;
+    max-height: 12rem;
+    padding: .5rem 0 .5rem 0;
+    border-bottom: .15rem solid #1c2021;
+    background-color: #f4f5f6;
+    transition: display .4s ease, max-height .4s ease, backgroud-color .4s ease;
+}
+
+.nav-drop-link {
+    color: #1c2021;
+    text-decoration: none;
+    padding: .5rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* decorative line between name and nav links */
+nav#h-nav:before {
+    content: "";
+    background: #1c2021;
+    width: 2px;
+    height: 4.25rem;
+    margin: auto 2rem auto 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+    text-transform: uppercase;
+    margin: .5rem .5rem auto .5rem;
+    padding: 2vh 0;
+    font-weight: 600;
+    color: #1c2021;
+    font-size: 1.25rem;
+    transition: background-color 0.2s ease;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* nav link bottom borders that based on type's category */
+#nav-html {
+    border-bottom: .3rem solid #e54b4b;
+}
+
+#nav-css {
+    border-bottom: .3rem solid #95C41C;
+}
+
+#nav-js {
+    border-bottom: .3rem solid #9381ff;
+}
+
+#nav-more {
+    border-bottom: .3rem solid #00B899;
+}
+
+#nav-about {
+    border-bottom: .3rem solid #0496FF;
+}
+
+/* any links that go to a specific folder change color based on type's category */
+a[href*="/html"]:hover {
+    background-color: #e54b4b;
+    color: #f4f5f6;
+}
+
+a[href*="/css"]:hover {
+    background-color: #95C41C;
+    color: #f4f5f6;
+}
+
+a[href*="/javascript"]:hover {
+    background-color: #9381ff;
+    color: #f4f5f6;
+}
+
+a[href*="/more"]:hover {
+    background-color: #00B899;
+    color: #f4f5f6;
+}
+
+/* will only activate with exact url. use "/" in href pointing to index.html to avoid activating this rule */
+a[href="/index.html"]:hover, a[href="/about.html"]:hover {
+    background-color: #0496FF;
+    color: #f4f5f6;
+}
+
+/* footer contains site map */
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5rem auto;
+    justify-content: space-between;
+    border-top: .13rem solid #1c2021;
+    padding-top: 1rem;
+}
+
+.f-stack {
+    display: flex;
+    flex-flow: column wrap;
+    width: 15%;
+    padding: 1em 1em;
+}
+
+.f-title {
+    text-align: left;
+    padding: .25em 0 .25em .25em;
+    margin: 0;
+    font-weight: 600;
+} 
+
+a.f-link {
+    color:#1c2021;
+    text-decoration: underline;
+    padding: .25em 0 .25em .25em;
+    display: block;
+}
+
+/* a class intended to bold current url links. add "url-current" to element's class. do not use for nav links  */
+.url-current {
+    font-weight: 600;
+}
+
+/* fix for header bar */
+@media screen and (max-width: 865px) {
+    nav#h-nav:before {
+        content: none;
+    }
+    
+    header {
+        border-bottom: none;
+        flex-flow: column nowrap;
+    }
+}
+
+/* 720 px and smaller media query */
+@media screen and (max-width: 720px) {
+    header {
+        border-bottom: none;
+        flex-flow: column nowrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    a#h-name {
+        margin: auto;
+        padding: 0;
+    }
+
+    footer {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: .5rem;
+    }
+
+    .f-stack {
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+    a.f-link {
+        text-decoration: underline;
+    }
+
+    nav#h-nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #f4f5f6;
+        width: 70vw;
+        max-height: 0;
+        padding: 0;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        opacity: 0;
+        overflow: hidden;
+        transition: opacity .1s ease-in-out, max-height .2s ease, background-color .2s ease;
+    }
+
+    #mobile-nav.active {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #f4f5f6;
+        width: 70vw;
+        max-height: 60vh;
+        padding: 0;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        opacity: 1;
+        border: .2rem solid #1c2021;
+        box-shadow: .2rem .2rem 0 #1c2021;
+        transition: opacity .1s ease-out, max-height .2s ease;
+    }
+
+    a.mobile-link {
+        color: #1c2021;
+        padding: 1rem;
+        font-size: 2rem;
+        text-decoration: none;
+    }
+
+    a.mobile-link:hover {
+        text-decoration: underline;
+    }
+
+    #burger {
+        display: block;
+        background-image: url("/img/hamburger.svg");
+        height: 3.5rem;
+        width: 3.5rem; 
+        background-color: #f4f5f6;
+        background-repeat: no-repeat;
+        background-size: 2.5em 2.5em;
+        background-position: center;
+        position: fixed;
+        top:1rem;
+        right:1rem;
+        border: .15rem solid #1c2021;
+        transition: box-shadow 0.2s ease, transform 0.1s ease;
+        cursor: pointer;
+        z-index: 51;
+    }
+
+    #burger.active {
+        display: block;
+        background-image: url("/img/exit.svg");
+        height: 3.5rem;
+        width: 3.5rem; 
+        background-color: #f4f5f6;
+        background-repeat: no-repeat;
+        background-size: 2em 2em;
+        background-position: center;
+        position: fixed;
+        top:1rem;
+        right:1rem;
+        border: .15rem solid #1c2021;
+        transition: opacity .2s ease, max-height .2s ease, background-color .2s ease;
+        cursor: pointer;
+        z-index: 51;
+    }
+}
