@@ -153,41 +153,41 @@ ul.toc li a:hover {
 
 /* landing pages cards */
 .mainguide.card-html {
-    background-image: url(/img/more-card.svg), linear-gradient(45deg, #e54b4b 0%,#e54b4b 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #e54b4b 91%);
+    background-image: url(/img/mainguide.svg), linear-gradient(45deg, #e54b4b 0%,#e54b4b 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #e54b4b 91%);
 }
 
 .tricky.card-html {
-    background-image: url(/img/placeholder.svg), linear-gradient(45deg, #e54b4b 0%,#e54b4b 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #e54b4b 91%);
+    background-image: url(/img/tricky.svg), linear-gradient(45deg, #e54b4b 0%,#e54b4b 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #e54b4b 91%);
 }
 
 .mainguide.card-css {
-    background-image: url(/img/more-card.svg), linear-gradient(45deg, #95C41C 0%,#95C41C 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #95C41C 91%);
+    background-image: url(/img/mainguide.svg), linear-gradient(45deg, #95C41C 0%,#95C41C 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #95C41C 91%);
 }
 
 .tricky.card-css {
-    background-image: url(/img/placeholder.svg), linear-gradient(45deg, #95C41C 0%,#95C41C 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #95C41C 91%);
+    background-image: url(/img/tricky.svg), linear-gradient(45deg, #95C41C 0%,#95C41C 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #95C41C 91%);
 }
 
 .flexbox.card-css {
-    background-image: url(/img/more-card.svg), linear-gradient(45deg, #95C41C 0%,#95C41C 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #95C41C 91%);
+    background-image: url(/img/flexbox.svg), linear-gradient(45deg, #95C41C 0%,#95C41C 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #95C41C 91%);
 }
 
 .grid.card-css {
-    background-image: url(/img/placeholder.svg), linear-gradient(45deg, #95C41C 0%,#95C41C 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #95C41C 91%);
+    background-image: url(/img/grid.svg), linear-gradient(45deg, #95C41C 0%,#95C41C 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #95C41C 91%);
 }
 
 .mainguide.card-js {
-    background-image: url(/img/more-card.svg), linear-gradient(45deg, #9381ff 0%,#9381ff 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #9381ff 91%);
+    background-image: url(/img/mainguide.svg), linear-gradient(45deg, #9381ff 0%,#9381ff 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #9381ff 91%);
 }
 
 .tricky.card-js {
-    background-image: url(/img/placeholder.svg), linear-gradient(45deg, #9381ff 0%,#9381ff 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #9381ff 91%);
+    background-image: url(/img/tricky.svg), linear-gradient(45deg, #9381ff 0%,#9381ff 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #9381ff 91%);
 }
 
 .exam-prep.card-more {
-    background-image: url(/img/more-card.svg), linear-gradient(45deg, #00B899 0%,#00B899 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #00B899 91%);
+    background-image: url(/img/exam.svg), linear-gradient(45deg, #00B899 0%,#00B899 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #00B899 91%);
 }
 
-.helpful-tools.card-more {
-    background-image: url(/img/placeholder.svg), linear-gradient(45deg, #00B899 0%,#00B899 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #00B899 91%);
+.external-res.card-more {
+    background-image: url(/img/tools.svg), linear-gradient(45deg, #00B899 0%,#00B899 18%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 91%, #00B899 91%);
 }

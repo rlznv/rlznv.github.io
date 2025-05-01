@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>[TITLE]</title>
+    <title>&lt;TagTutor&gt; | HTML Main Guide</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/styles/base.css">
     <link rel="stylesheet" type="text/css" href="/styles/base-info.css">
@@ -44,25 +44,25 @@
 
     <div id="drop-container">
       <div class="nav-drop" id="html-drop">
-        <a class="nav-drop-link" href="/html">HTML Home</a>
-        <a class="nav-drop-link" href="/html">HTML Main Guide</a>
-        <a class="nav-drop-link" href="/html">HTML Tricky Concepts</a>
+        <a class="nav-drop-link" href="/html/">HTML Home</a>
+        <a class="nav-drop-link" href="/html/main.html">HTML Main Guide</a>
+        <a class="nav-drop-link" href="/html/tricky.html">HTML Tricky Concepts</a>
       </div>
       <div class="nav-drop" id="css-drop">
         <a class="nav-drop-link" href="/css/">CSS Home</a>
-        <a class="nav-drop-link" href="/css">CSS Main Guide</a>
-        <a class="nav-drop-link" href="/css">CSS Grid</a>
-        <a class="nav-drop-link" href="/css">CSS Flexbox</a>
-        <a class="nav-drop-link" href="/css">CSS Tricky Concepts</a>
+        <a class="nav-drop-link" href="/css/main.html">CSS Main Guide</a>
+        <a class="nav-drop-link" href="/css/grid.html">CSS Grid</a>
+        <a class="nav-drop-link" href="/css/flexbox.html">CSS Flexbox</a>
+        <a class="nav-drop-link" href="/css/tricky.html">CSS Tricky Concepts</a>
       </div>
       <div class="nav-drop" id="js-drop">
-        <a class="nav-drop-link" href="/javascript">JavaScript Home</a>
-        <a class="nav-drop-link" href="/javascript">JavaScript Main Guide</a>
-        <a class="nav-drop-link" href="/javascript">JavaScript Tricky Concepts</a>
+        <a class="nav-drop-link" href="/javascript/">JavaScript Home</a>
+        <a class="nav-drop-link" href="/javascript/main.html">JavaScript Main Guide</a>
+        <a class="nav-drop-link" href="/javascript/tricky.html">JavaScript Tricky Concepts</a>
       </div>
       <div class="nav-drop" id="more-drop">
         <a class="nav-drop-link" href="/more">More Resources Home</a>
-        <a class="nav-drop-link" href="/more">Exam Prep</a>
+        <a class="nav-drop-link" href="/more/exam-prep.html">Exam Prep</a>
         <a class="nav-drop-link" href="/more/external-res.html">External Resources</a>
       </div>
     </div>
@@ -78,7 +78,7 @@
         <li>Current Page</li>
       </ul> 
 
-      <h1 class="info-h1 title-html">Page Title Placeholder</h1>
+      <h1 class="info-h1 title-html">HTML Main Guide</h1>
 
       <section class="info-sect">
         
@@ -96,71 +96,193 @@
            <li><a class="toc-link" href="#">Item</a></li>
           </ul>
         </article>
-        <h3>Subsection Title Placeholder</h3>
+        <h3>The Anatomy of an HTML Element</h3>
         <p>
-          I am placeholder text. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+          It is important to close an element because it allows for the website to know the start and end of each element. A tag consists of an element name placed within brackets. Each element uses a opening and closing tag to contain the element; the difference between the tags is the closing tag uses a slash before the element name is enclosed within the brackets.
         </p>
-        <div class="code-snippet">
-          <pre class="code-text js-code">const blurWordArray = document.querySelectorAll(".blur-word");
-blurWordArray.forEach(element => {
-element.addEventListener("click", () => {
-element.classList.toggle("unblur-word");
-});
-});</pre>
-        </div>
-          
-        <div class="code-snippet">
-          <pre class="code-text css-code">const blurWordArray = document.querySelectorAll(".blur-word");
-blurWordArray.forEach(element => {
-element.addEventListener("click", () => {
-element.classList.toggle("unblur-word");
-});
-});</pre>
-        </div>
 
         <div class="code-snippet">
-          <pre class="code-text html-code">const blurWordArray = document.querySelectorAll(".blur-word");
-blurWordArray.forEach(element => {
-element.addEventListener("click", () => {
-element.classList.toggle("unblur-word");
-});
-});</pre>
+          <pre class="code-text html-code">&lt;elementname&gt;Content here.&lt;/elementname&gt;</pre>
+        </div>
+
+        <h3>Basic Document Structure</h3>
+        <p>The text file cannot become an HTML file without the basic document structure. Without this basic document structure, the website will not read any characters or symbols correctly, causing it to render on the page incorrectly. </p>
+
+        
+        <div class="code-snippet">
+          <pre class="code-text html-code">
+  &lt;!DOCTYPE html&gt; <em>*The first line in the HTML document shows the website the document type and version of HTML used, allowing for proper website rendering.</em>
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;meta charset= “UTF-8”&gt; <em>*This tag tells the browser to use the UTF-8 character encoding when displaying the content. UTF-8 represents most of the characters and symbols and allows for browsers not to misinterpret characters.</em>
+  &lt;title&gt;Title goes here.&lt;/title&gt; <em>*The title of the website is written here.</em>
+  &lt;/head&gt;
+  &lt;body&gt;  <em>*The body tag is a block-level element.</em>
+    Page content goes here. <em>*Headers, paragraphs, images, etc., are placed into the body of the document.</em>
+  &lt;/body&gt; 
+  &lt;/html&gt;</pre>
+        </div>
+
+        <h3>Default Name Files</h3>
+        <p>The default file is called the index file. The default file name for an HTML file is <b>index.html</b>, but the file name can vary depending on how the server is configured. Titling the website's main page as index.html provides an easy starting point and allows for easy movement between the index page and subpages within the website.</p>
+
+        <h3>HTML TAGS</h3>
+        <h4>Heading Elements</h4>
+        <p>Headings can be defined as &lt;h1&gt; through &lt;h6&gt;. They can be used to structure information on a website, allowing for an optimal flow for the reader to follow. Heading elements are also block elements.</p>
+        <div class="code-snippet">
+          <pre class="code-text html-code">&lt;h1&gt; H1 &lt;/h1&gt; 
+&lt;h2&gt; H2 &lt;/h2&gt;
+&lt;h3&gt; H3 &lt;/h3&gt;
+&lt;h4&gt; H4 &lt;/h4&gt;
+&lt;h5&gt; H5 &lt;/h5&gt;
+&lt;h6&gt; H6 &lt;/h6&gt;</pre>
+        </div>
+        <h4>Thematic Breaks</h4>
+        <p>Thematic breaks can create a horizontal line across the page. This can be used to seperate content or to show a thematic break. You can use CSS to customize the appearance of the line break, such as the thickness and color. </p>
+
+        <div class="code-snippet">
+          <pre class="code-text html-code">&lt;hr&gt;</pre>
+        </div>
+</pre>
         </div>
 
         <figure>
           <img alt=" " src="/img/placeholder.svg"> 
         </figure>
-        <h2>List Title</h2>
+        <h2>Lists</h2>
+        <p>All list tags are block-level elements by default. There are 3 main lists that can be used in a website.</p>
         <ul>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-          <li>item
+          <li>Unordered List</li>
+          <ul>
+            <li> An unordered list typically consists of a bulleted list of items. </li>
+          </ul>
+          <li>Ordered List</li>
+          <ul>
+            <li>
+              An ordered list can be a numerical or alphabetical list.
+            </li>
+          </ul>
+          <li>Description List, Description Term and Description Value</li>
             <ul>
-              <li>2nd level item</li>
-              <li>2nd level item</li>
-              <li>2nd level item</li>
+              <li>Description list tag displays a list of terms along with a corresponding description. The tag can act as a container for the entire list.</li>
+            </ul>
+              <ul>
+               <li>Description term is used within the description kist to represent a term that is being described.
+              </li>
+            </ul>
+            <ul>
+              <li>Description value is also used within the description list to represent the description of the term.
+              </li>
             </ul>
           </li>
         </ul>
+        <div class="code-snippet">
+          <pre class="code-text html-code">&lt;ul&gt; Unordered Lists &lt;/ul&gt;
+&lt;ol&gt; Ordered Lists &lt;/ol&gt;
+&lt;dl&gt; Description Lists &lt;/dl&gt;
+&lt;dt&gt; Description Term &lt;/dt&gt;
+&lt;dd&gt; Description Value &lt;/dd&gt;</pre>
+        </div>
+</pre>
         
-        <h3>List Subtitle</h3>
-        
-        <ol>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-          <li>item
-            <ol>
-              <li>2nd level item</li>
-              <li>2nd level item</li>
-              <li>2nd level item</li>
-            </ol>
-          </li>
-        </ol>
-        
+        <h3>Long Quotations</h3>
+        <h4>Paragraph</h4>
+        A paragraph tag helps structure content allowing seperation of text blocks. 
+        <div class="code-snippet">
+          <pre class="code-text html-code">
+&lt;p&gt; Paragraph &lt;/p&gt;</pre>
+        </div>
+        <h4>Blockquote</h4>
+        <p>Blockquote is used for defining a section of a text that is in a long quotation from a diffrent source. The <b> cite </b> attribute can be also used. It specifies the URL of the source for the quote that was used. Blockquote usually stands alone and is separated from other surrounding text.   </p>
+        <div class="code-snippet">
+          <pre class="code-text html-code">&lt;blockquote&gt; Blockquote &lt;/blockquote&gt;</pre>
+        </div>
+        <h4>Preformatted Text</h4>
+        <p>Any text displayed using the preformatted tag will be on a fixed-width font. It allows for rendering of space, line breaks and tabs. It is useful when showing code snippets, art or when having precise formatting is important.</p>
+        <div class="code-snippet">
+          <pre class="code-text html-code">&lt;pre&gt; Preformatted Text &lt;/pre&gt;</pre>
+        </div>
+        <h3>Figures</h3>
+        <p>Figures are inline elements used for contained content, such as an image or diagram. They can also provide a description of the content.</p>
+        <div class="code-snippet">
+          <pre class="code-text html-code">&lt;figure&gt; Figure &lt;/figure&gt;</pre>
+        </div>
+        <h4>Figure Caption</h4>
+        <p>Figure caption describes the contents of the figure element and allows for an easy access to the description.</p>
+        <div class="code-snippet">
+          <pre class="code-text html-code">&lt;figcaption&gt; Figure Caption &lt;/figcaption&gt;</pre>
+        </div>
+        <h3>Inline vs Block Elements</h3>
+        <h4>Inline Element</h4>
+        <p>Inline elements allows the application of CSS to be able to style the element. Inline elements are typically used for small HTML files or quick edits. This allows for quick styling without affecting other elements.</p>
+        <div class="code-snippet">
+          <pre class="code-text html-code">&lt;span&gt; Inline Element &lt;/span&gt;
+  &lt;em&gt; Emphasis &lt;/em&gt;
+  &lt;strong&gt; Strong &lt;/strong&gt;
+  &lt;small&gt; Small &lt;/small&gt;
+  &lt;br&gt; Break &lt;/br&gt;
+  &lt;var&gt; Variable &lt;/var&gt;
+  &lt;i&gt; Italic &lt;/i&gt;
+  &lt;b&gt; Bold &lt;/b&gt;
+  &lt;img&gt; Image &lt;/img&gt;
+        </div>
+          </pre>
+        </div>
+        <h4>Block Element</h4>
+        <p>Block elements occupies the full width of the container, allowing for vertical stacking of elements. Block elements can be stacked side by side horizontally using CSS.</p>
+        <div class="code-snippet">
+      <pre class="code-text html-code">&lt;div&gt; Block Element &lt;/div&gt;
+  &lt;aside&gt; Aside &lt;/aside&gt;
+  &lt;nav&gt; Navigation &lt;/nav&gt;
+  &lt;header&gt; Header &lt;/header&gt;
+  &lt;footer&gt; Footer &lt;/footer&gt;
+  &lt;blockquote&gt; Blockquote &lt;/blockquote&gt;
+  &lt;pre&gt; Preformatted Text &lt;/pre&gt;</pre>
+        </div>
+        <h3>Giving Structure to your HTML File</h3>
+        <h4> Main Content</h4>
+        <p>The website's main content should be placed within the <b>main</b> tag element. This shows the user and web browsers that this is where the important information is located on the website. It allows for the main part of the content to be in one section, it also shows the important of the information when it is in the <b>main</b> tag.</p>
+        <div class="code-snippet">
+          <pre class="code-text html-code">&lt;main&gt; Main Content &lt;/main&gt;</pre>
+        </div>
+        <h4>Header</h4>
+        <p>A header is an introductory container where the navigation and website name can be contained in. It allows for users to find information quick and easy.</p>
+        <div class="code-snippet">
+          <pre class="code-text html-code">&lt;header&gt; Header &lt;/header&gt;</pre>
+        </div>
+        <h4>Footer</h4>
+        <p>A footer can display information at the bottom of the page such as copyright, contact information and navigation elements. It allows for users to find information quick and easy.</p>
+        <div class="code-snippet">
+          <pre class="code-text html-code">&lt;footer&gt; Footer &lt;/footer&gt;</pre>
+        </div>
+        <h4>Sections</h4>
+        <p>Sections are used for thematic grouping of content. By default the section tag is a block-level element. It can also help divide sections of the page.</p>
+        <p>Sections of similar content within the page are grouped together this allows for easy accessibility to users and browsers. </p>
+        <div class="code-snippet">
+          <pre class="code-text html-code">&lt;section&gt; Section &lt;/section&gt;</pre>
+        </div>
+        <h4>Articles</h4>
+        <p>Articles can be used for small-contained sections such as in blogs, news articles or where content is independent from one another.</p>
+        <div class="code-snippet">
+          <pre class="code-text html-code">&lt;article&gt; Article &lt;/article&gt;</pre>
+        </div>
+        <h3>Sidebars</h3>
+        <h4>Aside</h4>
+        <p>The aside element can be used to create side bars on a website. It holds information that is not directly related to the main content of the page but can be set aside independently from it.</p>
+        <p>Side bars can be used for side menus and information boxes that are separate from the main content of the website.</p>
+        <div class="code-snippet">
+          <pre class="code-text html-code">&lt;aside&gt; Aside &lt;/aside&gt;</pre>
+        </div>
+        <h4>Navigation</h4>
+        <p>Navigation provides links with the current document or for outside documents as well. It allows for easy accessibility because it contains the navigation links for the website. It can improve user usability along with enhancing the websites' structure.</p>
+        <div class="code-snippet">
+          <pre class="code-text html-code">&lt;nav&gt; Navigation &lt;/nav&gt;</pre>
+        </div>
+        <h4>Images</h4>
+        <p>Images can be used to imbed an image on the website by linking the image to the website. <b>Src</b> makes a specified path to the image while <b>alt</b> makes a specified alternate text for the image incase the image cannot be displayed.</p>
+        <div class="code-snippet">
+          <pre class="code-text html-code">&lt;img src= “URL” alt= “Description”&gt;</pre>
+        </div>
       </section>
     </main>
 
@@ -172,32 +294,32 @@ element.classList.toggle("unblur-word");
       
       <div class="f-stack" id="f-html">
         <p class="f-title">HTML</p>
-        <a class="f-link" href="/html/">HTML Landing Page</a>
-        <a class="f-link" href="/html/">HTML Main Guide</a>
-        <a class="f-link" href="/html/">HTML Tricky Concepts</a>
+        <a class="f-link" href="/html/index.html">HTML Home</a>
+        <a class="f-link" href="/html/main.html">HTML Main Guide</a>
+        <a class="f-link" href="/html/tricky.html">HTML Tricky Concepts</a>
       </div>
 
       <div class="f-stack" id="f-css">
         <p class="f-title">CSS</p>
-        <a class="f-link" href="/css/">CSS Landing Page</a>
-        <a class="f-link" href="/css/">CSS Main Guide</a>
-        <a class="f-link" href="/css/">CSS Grid</a>
-        <a class="f-link" href="/css/">CSS Flexbox</a>
-        <a class="f-link" href="/css/">CSS Tricky Concepts</a>
+        <a class="f-link" href="/css/index.html">CSS Home</a>
+        <a class="f-link" href="/css/main.html">CSS Main Guide</a>
+        <a class="f-link" href="/css/grid.html">CSS Grid</a>
+        <a class="f-link" href="/css/flexbox.html">CSS Flexbox</a>
+        <a class="f-link" href="/css/tricky.html">CSS Tricky Concepts</a>
       </div>
       
       <div class="f-stack" id="f-js">
         <p class="f-title">JavaScript</p>
-        <a class="f-link" href="/javascript/">JavaScript Landing Page</a>
-        <a class="f-link" href="/javascript/">JavaScript Main Guide</a>
-        <a class="f-link" href="/javascript/">JavaScript Tricky Concepts</a>
+        <a class="f-link" href="/javascript/index.html">JavaScript Home</a>
+        <a class="f-link" href="/javascript/main.html">JavaScript Main Guide</a>
+        <a class="f-link" href="/javascript/tricky.html">JavaScript Tricky Concepts</a>
       </div>
       
       <div class="f-stack" id="f-more">
         <p class="f-title">More Resources</p>
-        <a class="f-link" href="/more/">More Resources Landing Page</a>
-        <a class="f-link" href="/more/">Exam Prep</a>
-        <a class="f-link" href="/more/">External Resources</a>
+        <a class="f-link" href="/more/index.html">More Resources Home</a>
+        <a class="f-link" href="/more/exam-prep.html">Exam Prep</a>
+        <a class="f-link" href="/more/external-res.html">External Resources</a>
       </div>
     </footer>
   

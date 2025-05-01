@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>&lt;TagTutor&gt; | CSS Main Guide</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/styles/base.css">
+    <link rel="stylesheet" type="text/css" href="/styles/base-info.css">
+    <link rel="stylesheet" id="theme" type="text/css" href="styles/light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/js/js-init.js"></script>
+    <script src="/js/darkmode.js"></script>
+    <script src="/js/dropmenu.js"></script>
+    <script src="/js/hamburger.js"></script>
+  </head>
+  
+  <body >
+
+    <header> 
+      <a href="/" id="h-name"><h1 id="site-name">&lt;TagTutor&gt;</h1></a>
+
+      <nav id="h-nav" aria-label="desktop-nav">
+        <p class="nav-link" id="nav-html">HTML</p>
+        <p class="nav-link" id="nav-css">CSS</p>
+        <p class="nav-link" id="nav-js">JavaScript</p>
+        <p class="nav-link" id="nav-more">More Resources</p>
+        <a class="nav-link" id="nav-about" href="/about.html">About</a>
+      </nav>
+
+      <nav id="mobile-nav" aria-label="mobile-nav">
+        <a class="mobile-link" id="mobile-html" href="/html/">HTML</a>
+        <a class="mobile-link" id="mobile-css" href="/css/">CSS</a>
+        <a class="mobile-link" id="mobile-js" href="/javascript/">JavaScript</a>
+        <a class="mobile-link" id="mobile-more" href="/more/">More Resources</a>
+        <a class="mobile-link" id="mobile-about" href="/about.html">About</a>
+      </nav>
+
+      <div id="burger" onclick="toggleBurger()"></div>
+
+      <div id="switch" title="Switch themes" onclick="toggleTheme()"></div>
+
+    </header>
+
+    <div id="drop-container">
+      <div class="nav-drop" id="html-drop">
+        <a class="nav-drop-link" href="/html/">HTML Home</a>
+        <a class="nav-drop-link" href="/html/main.html">HTML Main Guide</a>
+        <a class="nav-drop-link" href="/html/tricky.html">HTML Tricky Concepts</a>
+      </div>
+      <div class="nav-drop" id="css-drop">
+        <a class="nav-drop-link" href="/css/">CSS Home</a>
+        <a class="nav-drop-link" href="/css/main.html">CSS Main Guide</a>
+        <a class="nav-drop-link" href="/css/grid.html">CSS Grid</a>
+        <a class="nav-drop-link" href="/css/flexbox.html">CSS Flexbox</a>
+        <a class="nav-drop-link" href="/css/tricky.html">CSS Tricky Concepts</a>
+      </div>
+      <div class="nav-drop" id="js-drop">
+        <a class="nav-drop-link" href="/javascript/">JavaScript Home</a>
+        <a class="nav-drop-link" href="/javascript/main.html">JavaScript Main Guide</a>
+        <a class="nav-drop-link" href="/javascript/tricky.html">JavaScript Tricky Concepts</a>
+      </div>
+      <div class="nav-drop" id="more-drop">
+        <a class="nav-drop-link" href="/more">More Resources Home</a>
+        <a class="nav-drop-link" href="/more/exam-prep.html">Exam Prep</a>
+        <a class="nav-drop-link" href="/more/external-res.html">External Resources</a>
+      </div>
+    </div>
+
+    <main>
+
+      <ul class="breadcrumb">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/html/">Item</a></li>
+        <li><a href="/css/">Item</a></li>
+        <li><a href="/javascript/">Item</a></li>
+        <li><a href="/more/">Item</a></li>
+        <li>Current Page</li>
+      </ul> 
+
+      <h1 class="info-h1 title-html">CSS Main Guide</h1>
+
+      <section class="info-sect">
+        
+        <h2>CSS: Cascading Style Sheets</h2>
+        <p>
+          Cascading Style Sheets &#40;CSS&#41; is a stylesheet language used to apply style and presentation to a document. It allows web developers to create visually appealing and responsive designs, enhancing user experience and accessibility.
+        </p>
+        <article class="toc-wrapper">
+          <h3 class="toc-title">Table of Contents</h3>
+          <ul class="toc">
+            <li><a class="toc-link" href="#">Item</a></li>
+            <li><a class="toc-link" href="#">Item</a></li>
+            <li><a class="toc-link" href="#">Item</a></li>
+            <li><a class="toc-link" href="#">Item</a></li>
+           <li><a class="toc-link" href="#">Item</a></li>
+          </ul>
+        </article>
+        <h3>Attaching Style to a Document</h3>
+        <p>Attaching a style to a document benefits user experience as it allows for a consistent and visually appealing interface. Style attachment can be added through various methods: inline, embedded, and external.</p>
+        <h4>External CSS</h4>
+          <p>External styles are linked to the document using a &lt;link&gt; tag, allowing for separation of content and presentation. External style sheets are preferred for larger projects as it promotes reusability and maintainability of styles across multiple pages.</p>
+          <div class="code-snippet">
+            <pre class="code-text css-code">
+&lt;style&gt;&#64;import url(external.css);&lt;/style&gt;</pre>
+          </div>
+        <h4>Embedded CSS</h4>
+          <p>Internal styles are defined within a &lt;style&gt; tag in the document's head section.</p>
+          <div class="code-snippet">
+            <pre class="code-text css-code">
+&lt;style&gt;&#64;...&lt;/style&gt;</pre>
+          </div>
+        <h4>Inline CSS</h4>
+          <p>Inline styles are applied directly to HTML elements using the "style" attribute.</p>
+          <div class="code-snippet">
+            <pre class="code-text css-code">
+&lt;h1 style= "color: red; margin-top: 2em"&gt;&#64;...&lt;/h1&gt;</pre>
+          </div>
+        <h3>CSS Terminology</h3>
+        <h4>Selectors</h4>
+        <p>Selectors are patterns used to select the elements you want to style. They can be simple or complex, allowing for precise targeting of elements.</p>
+        <h4>Declarations</h4>
+        <p>Declarations are the individual style rules that define how the selected elements should be styled. Each declaration consists of a property and a value.</p>
+        <h5>Properties</h5>
+        <p>Properties are the specific attributes of an element that can be styled, such as color, font-size, and margin.</p>
+        <h5>Values</h5>
+        <p>Values are the specific settings assigned to properties, determining how the element will be styled.</p>
+        
+        <h3>Color</h3>
+        <p>Color is a fundamental aspect of web design, allowing for the creation of visually appealing and engaging interfaces. CSS provides various methods for defining colors, including named colors, hexadecimal values, RGB, RGBa, HSL, and HSLA.</p>
+        <h4>Color Names</h4>
+        <p>Color names are predefined color values that can be used in CSS. They are easiest to remember and most convenient to use, but they are limited in number.</p>
+        <h4>Hexadecimal</h4>
+        <p>Hexadecimal color values are a six-digit combination of numbers and letters that represent colors. They are widely used in web design due to their precision and versatility. Below is the structure of the hexadecimal RGB value:</p>
+        <div class="code-snippet">
+          <pre class="code-text css-code">&#35;RRGGBB</pre>
+        </div>
+        <p>Where RR, GG, and BB are two-digit hexadecimal values representing the red, green, and blue values of the colors. Each value can range from 00 to FF. For example, the color white is represented as &#35;FFFFFF, while black is represented as &#35;000000.</p>
+        <h4>RGB</h4>
+        <p>RGB color values are defined using the RGB function, which takes three parameters representing the red, green, and blue components of the color. The values can be specified as integers ranging from 0 to 255 or as percentages.</p>
+        <h4>RGBa</h4>
+        <p>RGBa is an extension of the RGB color model that includes an alpha channel for transparency. The alpha value can range from 0 &#40;completely transparent&#41; to 1 &#40;completely opaque&#41;. The syntax for RGBa is as follows:</p>
+        <h4>HSL</h4>
+        <p>HSL color values are defined using the HSL function, which takes three parameters: hue, saturation, and lightness. The hue is represented as an angle in degrees &#40;0-360&#41;, while saturation and lightness are represented as percentages.</p>
+
+        <h3>Fonts</h3>
+        <p>Fonts are essential for typography and readability in web design. Consider accessibility practices when choosing a font.</p>
+        <h4>Font Family</h4>
+        <p>The font-family property is used to specify the typeface of the text. It can accept multiple values, allowing for fallback options in case the preferred font is not available.</p>
+        <h4>Font Size</h4>
+        <p>The font-size property is used to set the size of the text. It can accept various units, including pixels, ems, rems, percentages, and viewport units.</p>
+
+        <h3>Pesudo-classes</h3>
+        <p>Pesudo-classes are special keywords added to selectors that specify a special state of the selected elements. They are used to style elements based on their state, such as hover or focus.</p>
+        <h4>Anatomy of the Pseudo-class Selector</h4>
+        <p>The selector is signified by a colon &#40;:&#41; character then followed by the the name of the pseudo-class. Here are a few commonly used selectors:</p>
+        <ul>
+          <li>a:link &#123; &#125;
+            <ul><li>applies a style to unclicked (unvisited) links</li></ul>
+          <li>a:visited &#123; &#125;
+            <ul><li>applies a style to links that have already been clicked</li></ul>
+          <li>a:focus &#123; &#125;
+            <ul><li>applies when the element is selected and ready for input</li></ul>
+          <li>a:hover &#123; &#125;
+            <ul><li>applies when the mouse pointer is over the element</li></ul>
+          <li>a:active &#123; &#125;
+            <ul><li>apply styles to an element while it is in the process of being activated</li></ul>
+        </ul>
+          
+        <div class="code-snippet">
+          <pre class="code-text css-code">const blurWordArray = document.querySelectorAll(".blur-word");
+blurWordArray.forEach(element => {
+element.addEventListener("click", () => {
+element.classList.toggle("unblur-word");
+});
+});</pre>
+        </div>
+
+        <figure>
+          <img alt=" " src="/img/placeholder.svg"> 
+        </figure>
+        <h2>List Title</h2>
+        <ul>
+          <li>item</li>
+          <li>item</li>
+          <li>item</li>
+          <li>item</li>
+          <li>item
+            <ul>
+              <li>2nd level item</li>
+              <li>2nd level item</li>
+              <li>2nd level item</li>
+            </ul>
+          </li>
+        </ul>
+        
+        <h3>List Subtitle</h3>
+        
+        <ol>
+          <li>item</li>
+          <li>item</li>
+          <li>item</li>
+          <li>item</li>
+          <li>item
+            <ol>
+              <li>2nd level item</li>
+              <li>2nd level item</li>
+              <li>2nd level item</li>
+            </ol>
+          </li>
+        </ol>
+        
+      </section>
+    </main>
+
+    <footer>
+      <div class="f-stack" id="f-h-a">
+        <a class="f-link" href="/index.html">Home</a>
+        <a class="f-link" href="/about.html">About</a>
+      </div>
+      
+      <div class="f-stack" id="f-html">
+        <p class="f-title">HTML</p>
+        <a class="f-link" href="/html/index.html">HTML Home</a>
+        <a class="f-link" href="/html/main.html">HTML Main Guide</a>
+        <a class="f-link" href="/html/tricky.html">HTML Tricky Concepts</a>
+      </div>
+
+      <div class="f-stack" id="f-css">
+        <p class="f-title">CSS</p>
+        <a class="f-link" href="/css/index.html">CSS Home</a>
+        <a class="f-link" href="/css/main.html">CSS Main Guide</a>
+        <a class="f-link" href="/css/grid.html">CSS Grid</a>
+        <a class="f-link" href="/css/flexbox.html">CSS Flexbox</a>
+        <a class="f-link" href="/css/tricky.html">CSS Tricky Concepts</a>
+      </div>
+      
+      <div class="f-stack" id="f-js">
+        <p class="f-title">JavaScript</p>
+        <a class="f-link" href="/javascript/index.html">JavaScript Home</a>
+        <a class="f-link" href="/javascript/main.html">JavaScript Main Guide</a>
+        <a class="f-link" href="/javascript/tricky.html">JavaScript Tricky Concepts</a>
+      </div>
+      
+      <div class="f-stack" id="f-more">
+        <p class="f-title">More Resources</p>
+        <a class="f-link" href="/more/index.html">More Resources Home</a>
+        <a class="f-link" href="/more/exam-prep.html">Exam Prep</a>
+        <a class="f-link" href="/more/external-res.html">External Resources</a>
+      </div>
+    </footer>
+  
+  </body>
+  
+</html>
