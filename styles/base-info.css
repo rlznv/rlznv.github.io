@@ -25,6 +25,10 @@ main h1 {
     background-color: #00B899;
 }
 
+.title-h-a {
+    background-color: #0496FF;
+}
+
 .info-sect h2 {
     font-size: 2rem;
     padding: .5rem 1rem;
