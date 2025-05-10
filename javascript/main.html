@@ -44,26 +44,26 @@
 
     <div id="drop-container">
       <div class="nav-drop" id="html-drop">
-        <a class="nav-drop-link" href="/html">HTML Home</a>
-        <a class="nav-drop-link" href="/html">HTML Main Guide</a>
-        <a class="nav-drop-link" href="/html">HTML Tricky Concepts</a>
+        <a class="nav-drop-link" href="/html/">HTML Home</a>
+        <a class="nav-drop-link" href="/html/main.html">HTML Main Guide</a>
+        <a class="nav-drop-link" href="/html/tricky.html">HTML Tricky Concepts</a>
       </div>
       <div class="nav-drop" id="css-drop">
         <a class="nav-drop-link" href="/css/">CSS Home</a>
-        <a class="nav-drop-link" href="/css">CSS Main Guide</a>
-        <a class="nav-drop-link" href="/css">CSS Grid</a>
-        <a class="nav-drop-link" href="/css">CSS Flexbox</a>
-        <a class="nav-drop-link" href="/css">CSS Tricky Concepts</a>
+        <a class="nav-drop-link" href="/css/main.html">CSS Main Guide</a>
+        <a class="nav-drop-link" href="/css/grid.html">CSS Grid</a>
+        <a class="nav-drop-link" href="/css/flexbox.html">CSS Flexbox</a>
+        <a class="nav-drop-link" href="/css/tricky.html">CSS Tricky Concepts</a>
       </div>
       <div class="nav-drop" id="js-drop">
-        <a class="nav-drop-link" href="/javascript">JavaScript Home</a>
-        <a class="nav-drop-link" href="/javascript">JavaScript Main Guide</a>
-        <a class="nav-drop-link" href="/javascript">JavaScript Tricky Concepts</a>
+        <a class="nav-drop-link" href="/javascript/">JavaScript Home</a>
+        <a class="nav-drop-link" href="/javascript/main.html">JavaScript Main Guide</a>
+        <a class="nav-drop-link" href="/javascript/tricky.html">JavaScript Tricky Concepts</a>
       </div>
       <div class="nav-drop" id="more-drop">
-        <a class="nav-drop-link" href="/more">More Resources Home</a>
-        <a class="nav-drop-link" href="/more">Exam Prep</a>
-        <a class="nav-drop-link" href="/more">External Resources</a>
+        <a class="nav-drop-link" href="/more/">More Resources Home</a>
+        <a class="nav-drop-link" href="/more/exam-prep.html">Exam Prep</a>
+        <a class="nav-drop-link" href="/more/external-res.html">External Resources</a>
       </div>
     </div>
 
@@ -71,20 +71,28 @@
 
       <ul class="breadcrumb">
         <li><a href="/index.html">Home</a></li>
-        <li><a href="/html/">Item</a></li>
-        <li><a href="/css/">Item</a></li>
-        <li><a href="/javascript/">Item</a></li>
-        <li><a href="/more/">Item</a></li>
-        <li>Current Page</li>
+        <li><a href="/javascript/">JavaScript</a></li>
+        <li><a href="/javascript/main.html">JavaScript Main Guide</a></li>
       </ul> 
 
       <h1 class="info-h1 title-js">JavaScript Main Guide</h1>
 
       <section class="info-sect">
         
-        <h2>What is JavaScript used for?</h2>
-        <p>Using JavaScript allows for different interactions on the website such as visual effects, animations, and transitions. This helps websites be more user friendly and brings different design elements that elevate the aesthetical look of the website.</p>
-        <h3>How to attach JavaScript to HTML code?</h3>
+        <h2 class="exam-header title-js">Introduction</h2>
+        <p>JavaScript allows for different interactions on the website such as visual effects, animations, and transitions. This can help websites be more user friendly and bring different design elements that elevate the aesthetical look of the website.</p>
+        
+        <article class="toc-wrapper">
+          <h3 class="toc-title">Table of Contents</h3>
+          <ul class="toc">
+            <li><a class="toc-link" href="#js-attach">Attaching JavaScript to HTML Documents</a></li>
+            <li><a class="toc-link" href="#statements">Script Anatomy</a></li>
+            <li><a class="toc-link" href="#data-types">Data Types</a></li>
+            <li><a class="toc-link" href="#arrays">Arrays</a></li>
+          </ul>
+        </article>
+
+        <h3 class="exam-header title-js" id="js-attach">Attaching JavaScript to HTML Documents</h3>
         <h4>Embedded Script</h4>
         <p>Embedded Script allows for a piece of code written in JavaScript to be integrated within the website.</p>
         <div class="code-snippet">
@@ -95,9 +103,110 @@
         <div class="code-snippet">
             <pre class="code-text js-code"> &lt;script src&gt; "my_script.js" &lt;/script&gt; </pre>
           </div>
-            </pre>
-          </div>        
-        <h3>List Subtitle</h3>
+        <h4>Script Placement in HTML Code</h4>
+        <p>To be able to properly put JavaScript in with your HTML code you will need to use the script tag.</p>
+        <div class="code-snippet">
+          <pre class="code-text js-code">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;meta charset= “UTF-8”&gt;
+  &lt;title&gt;Title goes here.&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+   ...Content of the page...
+  &lt;script scr="script.js"&gt; &lt;/script&gt;
+  &lt;/body&gt; 
+  &lt;/html&gt;</pre>
+        </div>
+      <h3 class="exam-header title-js">Script Anatomy</h3>
+      <p>To properly write or recognize JavaScript code you will need to know the anatomy of a script. The script is made up of different parts that are used to create the code. Here are common terms to become familar with:</p>
+      <h4 id="statements">Statements</h4>
+      <p>A statement is a command line that tells the browser to preform a specific task or action. These statements are what make up a script. Statements typically end with a semicolon but a line break is also able to end the statement. For better readability and organization, it is recommended to end the statement with a semicolon.</p>
+      <div class="code-snippet">
+        <pre class="code-text js-code">
+alert&#40;"Thank you."&#41;;</pre>
+      </div>
+      <h4 id="comments">Comments</h4>
+      <p>In a script, comments are used to help a reader understand the code. This is a good practice to include in your code especially if you are working with a team or the code will be edited in the future by someone else. Comments are not read on the browser and are not part of the code. There are two types of methods to use comments:</p>
+      <h4>Single Line Comments</h4>
+      <p>To create a single line comment, place two slash characters at the start of the line.</p>
+      <div class="code-snippet">
+        <pre class="code-text js-code">
+// This is a single line comment.</pre>
+      </div>
+      <h4>Multi-Line Comments</h4>
+      <p>To create a multi-line comment, place a slash and an asterisk at the start of the line and an asterisk and a slash at the end of the line.</p>
+      <div class="code-snippet">
+        <pre class="code-text js-code">
+/* This is a multi-line comment.
+The script will ignore this when it preforms its task */</pre>
+      </div>
+      <h4 id="variables">Variables</h4>
+      <p>Variables are similar to containers that hold information. This information can be a number, a string, or a boolean. Variables are used to store data values that can be used later in the code. To declare a variable, you will need to use the <code>var</code> keyword followed by the name of the variable. The name of the variable can be anything but it is recommended to use a name that describes what the variable is storing. Note that Javascript and variables are case-sensitive. Here are important rules to follow when giving a variable a name:</p>
+      <ul>
+        <li>The name must begin with either a letter or an underscore.</li>
+        <li>The name can include letters, digits, and underscores, in any order.</li>
+        <li>The name cannot include spaces hence the use of underscores.</li>
+        <li>The name cannot use any special characters such as: 
+            <ul>
+              <li>&#33;</li>
+              <li>.</li>
+              <li>,</li>
+              <li>&#47;</li>
+              <li>&#92;</li>
+              <li>&#43;</li>
+              <li>&#42;</li>
+              <li>&#61;</li>
+            </ul>
+          </li>
+      </ul>
+      <h3 class="exam-header title-js" id="data-types">Data Types</h3>
+      <p></p>
+      <h4>Undefined</h4>
+      <p>This is when you give a variable a name but not a value. This will cause the variable to have a value of <b>undefined</b>. This will be useful for when you are troubleshooting your code, when a variable shows as undefined it usually is not declared correctly or there is a typo.</p>
+      <div class="code-snippet">
+        <pre class="code-text js-code">var foo;  
+alert(foo);</pre>
+      </div>
+      <h4>Null</h4>
+      <p>Null is similar to <b>undefined</b>, although this one defines the variable but does not having any meaningful value.</p>
+      <div class="code-snippet">
+        <pre class="code-text js-code">
+var foo= null;
+alert(foo);</pre>
+      </div>
+      <h4>Integers</h4>
+      <p>Variables can be assigned integers. You can use the variable name as if it was its value. For example, foo can be considered as the number 5. You can write (foo + foo).</p>
+      <div class="code-snippet">
+        <pre class="code-text js-code">
+var foo= 5;
+alert(foo);
+alert(foo + foo);</pre>
+      </div>
+      <h4>Strings</h4>
+      <p>Strings creates a line of text in which the characters are in a single or double set of quotes defines it into a string.</p>
+      <div class="code-snippet">
+        <pre class="code-text js-code">
+var foo= "five";
+alert(foo); </pre>
+      </div>
+      <h4>Booleans</h4>
+      <p>With the <b>boolean</b> variable, you can create true or false values.</p>
+      <div class="code-snippet">
+        <pre class="code-text js-code">
+var foo= true;</pre>
+      </div>
+      <h3 class="exam-header title-js" id="arrays">Arrays</h3>
+      <p>Arrays are a group of values that can all be assigned to a single variable. When listing the values they need to refer to a set of numbers based on how they appear on the list. The first one is assigned the number 0, then 1, and so on.</p>
+      <div class="code-snippet">
+        <pre class="code-text js-code">
+var foo= [1, 2, 3, 4, 5];
+alert(foo[0]); 
+alert(foo[1]); 
+alert(foo[2]);</pre>
+      </div>
+
       </section>
     </main>
 
@@ -109,32 +218,32 @@
       
       <div class="f-stack" id="f-html">
         <p class="f-title">HTML</p>
-        <a class="f-link" href="/html/">HTML Landing Page</a>
-        <a class="f-link" href="/html/">HTML Main Guide</a>
-        <a class="f-link" href="/html/">HTML Tricky Concepts</a>
+        <a class="f-link" href="/html/index.html">HTML Landing Page</a>
+        <a class="f-link" href="/html/main.html">HTML Main Guide</a>
+        <a class="f-link" href="/html/tricky.html">HTML Tricky Concepts</a>
       </div>
 
       <div class="f-stack" id="f-css">
         <p class="f-title">CSS</p>
-        <a class="f-link" href="/css/">CSS Landing Page</a>
-        <a class="f-link" href="/css/">CSS Main Guide</a>
-        <a class="f-link" href="/css/">CSS Grid</a>
-        <a class="f-link" href="/css/">CSS Flexbox</a>
-        <a class="f-link" href="/css/">CSS Tricky Concepts</a>
+        <a class="f-link" href="/css/index.html">CSS Landing Page</a>
+        <a class="f-link" href="/css/main.html">CSS Main Guide</a>
+        <a class="f-link" href="/css/grid.html">CSS Grid</a>
+        <a class="f-link" href="/css/flexbox.html">CSS Flexbox</a>
+        <a class="f-link" href="/css/tricky.html">CSS Tricky Concepts</a>
       </div>
       
       <div class="f-stack" id="f-js">
         <p class="f-title">JavaScript</p>
-        <a class="f-link" href="/javascript/">JavaScript Landing Page</a>
-        <a class="f-link" href="/javascript/">JavaScript Main Guide</a>
-        <a class="f-link" href="/javascript/">JavaScript Tricky Concepts</a>
+        <a class="f-link" href="/javascript/index.html">JavaScript Landing Page</a>
+        <a class="f-link" href="/javascript/main.html">JavaScript Main Guide</a>
+        <a class="f-link" href="/javascript/tricky.html">JavaScript Tricky Concepts</a>
       </div>
       
       <div class="f-stack" id="f-more">
         <p class="f-title">More Resources</p>
-        <a class="f-link" href="/more/">More Resources Landing Page</a>
-        <a class="f-link" href="/more/">Exam Prep</a>
-        <a class="f-link" href="/more/">External Resources</a>
+        <a class="f-link" href="/more/index.html">More Resources Landing Page</a>
+        <a class="f-link" href="/more/exam-prep.html">Exam Prep</a>
+        <a class="f-link" href="/more/external-res.html">External Resources</a>
       </div>
     </footer>
   

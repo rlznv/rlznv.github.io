@@ -62,7 +62,7 @@
         <a class="nav-drop-link" href="/javascript/tricky.html">JavaScript Tricky Concepts</a>
       </div>
       <div class="nav-drop" id="more-drop">
-        <a class="nav-drop-link" href="/more">More Resources Home</a>
+        <a class="nav-drop-link" href="/more/">More Resources Home</a>
         <a class="nav-drop-link" href="/more/exam-prep.html">Exam Prep</a>
         <a class="nav-drop-link" href="/more/external-res.html">External Resources</a>
       </div>
@@ -77,30 +77,31 @@
       
       <h1 class="title-more info-h1">Exam Help</h1>
       <section class="info-sect">
-        <h2>Introduction and Methodology</h2>
+        <h2 class="exam-header title-more">Introduction</h2>
         <p>
-          We created our Exam Help page to provide students with practice questions that reflect the concepts tested in the midterm exam. The midterm exam primarily tests foundational foundational web development knowledge. This knowledge includes modern HTML5 best practices, how a browser interacts with a server, and the role of JavaScript on the web. In addition to that foundational knowledge, students will also need to draw and/or describe any given HTML element or CSS rule.
+          We created our Exam Help page to provide students with practice questions that reflect the concepts tested in the midterm exam. The midterm exam primarily tests foundational web development knowledge. This knowledge includes modern HTML5 best practices, how a browser interacts with a server, and the role of JavaScript on the web. In addition to that foundational knowledge, students will also need to draw and/or describe any given HTML element or CSS rule.
         </p>
         <p>
           Here's a brief summary what you'll need to pratice to do well on the exam.
         </p>
         <ul>
-          <li>Interpreting HTML markup and CSS rules, then drawing it and/or describing it.</li>
+          <li>Interpreting HTML markup and CSS rules, then drawing and/or describing it.</li>
           <li>Identifying different HTML, CSS, and JavaScript elements, then explaining what those elements do on a web page.</li>
           <li>Differentiating between block and inline elements.</li>
           <li>Explaining the importance of CSS properties like <code>display</code>.</li>
           <li>Describing the necessary HTML elements for a boilerplate HTML5 web page.</li>
           <li>Explaining how attributes, properties, and values affect HTML elements.</li>
         </ul>
+        <p>
+          Answers to our practice questions are blurred by default. Click on the blurred text and images to reveal the answers.
+        </p>
 
         <article class="toc-wrapper">
           <h3 class="toc-title">Table of Contents</h3>
           <ul class="toc">
             <li><a class="toc-link" href="#sec1">Draw and Describe</a></li>
             <li><a class="toc-link" href="#sec2">Element Identification</a></li>
-            <li><a class="toc-link" href="#">Item</a></li>
-            <li><a class="toc-link" href="#">Item</a></li>
-            <li><a class="toc-link" href="#">Item</a></li>
+            <li><a class="toc-link" href="#sec3">Short-Essay Questions</a></li>
           </ul>
         </article>
 
@@ -136,8 +137,8 @@ span {
 } 
 div {
   display: grid; 
-  width 75%; 
-  margin 0 auto; 
+  width: 75%; 
+  margin: 0 auto; 
   color: #660066; 
   grid-template-columns: 1fr 1fr 1fr 1fr; 
   grid-template-rows: 2fr 2fr; 
@@ -165,8 +166,28 @@ div {
   }
 }</pre></div>
   <div class="exam-answer blur-word">
+    <p>
+      The <code>&lt;div&gt;</code> element's <code>&lt;display&gt;</code> property is set to <code>grid</code>, switching its display to CSS grid. The CSS rules produce a grid with four columns and two rows. The grid's width is 75% of its container. The grid is also horizontally centered in its container and have 5 pixel gaps between each grid area.
+    </p>
+    <p>
+      The <code>&lt;div&gt;</code>'s <code>color</code> property affects the foreground color of the <code>&lt;div&gt;</code>'s child elements, meaning that the <code>&lt;span&gt;</code>'s text is dark purple.
+    </p>
+    <p>
+      The <code>&lt;span&gt;</code> elements have a red dashed border of .25rem or 6 pixels. Each <code>&lt;span&gt;</code> element has a rule that dictates its grid area. The <code>&lt;span&gt;</code> elements have their margin and padding set to 0, meaning that each <code>&lt;span&gt;</code>'s text is in the very top left corner. 
+    </p>
+    <p>
+      Refer to the image below for the appearance of the <code>&lt;div&gt;</code> when seen on the web.
+    </p>
     <figure>
-      <img style="height: 5em;" alt=" " src="/img/placeholder.svg">
+      <img alt="Image of the answer to question one" src="/img/Q1.png">
+    </figure>
+    <p>There is a media query that controls how the <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> elements display when printed. When printed, they will appear as block elements, creating a column.
+    </p>
+    <p>
+      Refer to the image below for the appearance of the <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code>s when printed.
+    </p>
+    <figure>
+      <img alt="Image of the media print attribute to question one" src="/img/Q1print.png">
     </figure>
   </div>
 </div>
@@ -185,12 +206,25 @@ div {
 &lt;/aside&gt;</pre></div>
 
   <div class="code-snippet">
-    <pre class="code-text css-code">html { font-size: 24pt } span { margin: 0; border: 3px solid black; } aside { display: grid; width: 50%; margin: auto; color: #fafafa; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); grid-template-areas: "one one one" "two three four" "two five five" } #one { grid-area: one } #two { grid-area: two; } #four { grid-area: four } #three { grid-area: three } #five { grid-area: five } @media screen and (max-width: 320px) { aside { display: none } }</pre></div>
-<div class="exam-answer blur-word">
-<figure>
-<img style="height: 5em;" alt=" " src="/img/placeholder.svg">
-</figure>
-</div>
+    <pre class="code-text css-code">html { font-size: 24pt; } span { margin: 0; border: 3px solid black; } aside { display: grid; width: 50%; margin: auto; color: #fafafa; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); grid-template-areas: "one one one" "two three four" "two five five"; } #one { grid-area: one; } #two { grid-area: two; } #four { grid-area: four; } #three { grid-area: three; } #five { grid-area: five; } @media screen and (max-width: 320px) { aside { display: none; } }</pre></div>
+  <div class="exam-answer blur-word">
+  <p>
+    The <code>&lt;aside&gt;</code> element's <code>&lt;display&gt;</code> property is set to <code>grid</code>, switching its display to CSS grid. The CSS rules produce a grid with three columns and three rows. The grid's width is 50% of its container. The grid is also horizontally and vertically centered in its container.
+  </p>
+  <p>
+    The <code>&lt;div&gt;</code>'s <code>color</code> property is set to <code>#fafafa</code>, a color that's nearly white, meaning that the <code>&lt;span&gt;</code> elements' text is nearly invisible on a white background.
+  </p>
+  <p>
+    The <code>&lt;span&gt;</code> elements have a solid black border of 3 pixels. Each <code>&lt;span&gt;</code> element has a rule that dictate its grid area, though it is hard to see each <code>&lt;span&gt;</code>'s text. 
+  </p>
+  <p>
+    Refer to the image below for the appearance of the <code>&lt;aside&gt;</code> when seen on the web with a white background.
+  </p>
+    <figure>
+    <img alt="image of question two's grid" src="/img/Q2.png">
+  </figure>
+  <p>There is a media query that controls the display of the aside element. When the viewport is less than 320 pixels wide, the aside element will not display.</p>
+  </div>
 </div>
 
 <div class="exam-qa">
@@ -200,12 +234,24 @@ div {
   <div class="code-snippet">
     <pre class="code-text html-code">&lt;nav class="menu"&gt;&lt;p&gt;Hello and welcome to Bobson Dugnutt's website!&lt;/p&gt;&lt;/nav&gt;</pre></div>
   <div class="code-snippet">
-    <pre class="code-text css-code">nav { position: absoulute; top: 0; left: 0; width: 100%; color: #ffffff; background-color: blue; font-size: 12pt; font-family: Charter, serif; } .menu { font-size: 36pt; padding: 1rem; } .menu p { font-size: 48pt; text-align: center; } </pre></div>
-<div class="exam-answer blur-word">
-<figure>
-<img style="height: 5em;" alt=" " src="/img/placeholder.svg">
-</figure>
-</div>
+    <pre class="code-text css-code">nav { position: fixed; top: 0; left: 0; width: 100%; color: #ffffff; background-color: blue; font-size: 12pt; font-family: Charter, serif; } .menu { font-size: 36pt; padding: 1rem; } .menu p { font-size: 48pt; text-align: center; } </pre></div>
+  <div class="exam-answer blur-word">
+    <p>
+      The <code>&lt;nav&gt;</code> container is fixed to the top left of the viewport, spanning the viewport's entire width.
+    </p>
+    <p>
+      The <code>&lt;nav&gt;</code>'s foreground color is set to pure white, and its background color is set to blue. Therefore, the <code>&lt;p&gt;</code> element within the <code>&lt;nav&gt;</code> container will display as white text.
+    </p>
+    <p>
+      The <code>&lt;p&gt;</code>'s text will appear center aligned, with 1 rem of padding, in the Charter font (with the browser's default serif font as a fallback), and in a 48pt font size. 
+    </p>
+    <p>
+      The <code>.menu</code> selector adds a new <code>padding</code> rule of 1rem. The <code>.menu</code> selector is more specific than the <code>nav</code> selector, meaning <code>.menu</code>'s 36pt font size overrides <code>nav</code>'s 12pt font size. However, the <code>.menu p</code> selector is the most specific selector, overriding all other rules. This results in the final font size of the <code>&lt;p&gt;</code> being 48pt.
+    </p>
+    <figure>
+      <img alt=" " src="/img/Q3.jpg">
+    </figure>
+  </div>
 </div>
 
 <div class="exam-qa">
@@ -217,8 +263,20 @@ div {
   <div class="code-snippet">
     <pre class="code-text css-code">a.button { display: block; width: 5rem; font-size: 1rem; padding: 1rem; border: 2px solid purple; border-radius: 5px; text-transform: uppercase; transform: rotate(20deg); transition: all .5s; } a.button:hover { border-radius: 20px; transform: rotate(0deg); transition: all .5s; }</pre></div>
   <div class="exam-answer blur-word">
+    <p>
+      The HTML creates an <code>&lt;a&gt;</code> element that displays the text, "Click me!"
+    </p>
+    <p>
+      The CSS styles the <code>&lt;a&gt;</code> to display as a block element button with hover effects. The text size of the button is 1 rem with 1 rem of padding on all sides. The text is also transformed to be in all uppercase.
+    </p>
+    <p>
+      In its default state, the <code>&lt;a&gt;</code> element has a width of 5 rem, a 2 pixel solid purple border, 5 pixel rounded corners, and is rotated 20 degrees. 
+    </p>
+    <p>
+      Upon hovering on the <code>&lt;a&gt;</code> element, the element's rotation is set to the default of 0 degrees and its corners are rounded to 20 pixels. The transition between the default and hovered states is set to half a second for all properties, resulting in a smooth transition animation between states.
+    </p>
     <figure>
-      <img style="height: 5em;" alt=" " src="/img/placeholder.svg">
+      <img alt=" " src="/img/q4combine.jpg">
     </figure>
   </div>
 </div>
@@ -228,7 +286,7 @@ div {
     <strong>Q5 </strong>Draw and describe how this HTML and CSS would appear on a web page.
   </p>
   <div class="code-snippet">
-    <pre class="code-text html-code">&lt;article&gt;&lt;p id="one"&gt;1&lt;p&gt;&lt;p id="two"&gt;2&lt;/p&gt;&lt;p id="three"&gt;3&lt;/p&gt;&lt;p id="four"&gt;4&lt;p&gt;&lt;p id="five"&gt;5&lt;p&gt;&lt;/article&gt;</pre></div>
+    <pre class="code-text html-code">&lt;article&gt;&lt;p id="one"&gt;1&lt;/p&gt;&lt;p id="two"&gt;2&lt;/p&gt;&lt;p id="three"&gt;3&lt;/p&gt;&lt;p id="four"&gt;4&lt;/p&gt;&lt;p id="five"&gt;5&lt;/p&gt;&lt;/article&gt;</pre></div>
   <div class="code-snippet">
     <pre class="code-text css-code">article {
   display: flex;
@@ -251,8 +309,20 @@ p {
   order: 5;
 }</pre></div>
   <div class="exam-answer blur-word">
+    <p>
+      The <code>&lt;article&gt;</code> element is a flex container that is center aligned in its parent container with a 5 pixel solid green border, a width of 50% of its container, and a height of 500 pixels.
+    </p>
+    <p>
+      The <code>&lt;article&gt;</code> container has five flex items. These five items are arranged in a column and flow in reverse order. The items are center justified on the flex container's main axis (the Y-axis), meaning that they are vertically aligned center.  
+    </p>
+    <p>
+      The <code>&lt;p&gt;</code> flex items have center aligned text and a 1 pixel solid black border.
+    </p>
+    <p>
+      The <code>&lt;p&gt;</code> element with an id of <code>three</code> has its order set to 5, meaning that it has the highest value in regards to order. Since the flow of the <code>&lt;article&gt;</code> is set to reverse, the <code>&lt;p&gt;</code> with the id of <code>three</code> is the top-most item. 
+    </p>
     <figure>
-      <img style="height: 5em;" alt=" " src="/img/placeholder.svg">
+      <img alt=" " src="/img/Q5.jpg">
     </figure>
   </div>
 </div>
@@ -326,6 +396,128 @@ p {
   </div>
 </div>
 
+<div class="exam-qa">
+  <p class="exam-question">
+    <strong>Q5 </strong>Identify the element type and describe its function on a web page.
+  </p>
+  <div class="code-snippet">
+    <pre class="code-text mystery-code">let theme = document.getElementById("theme");</pre></div>
+  <div class="exam-answer blur-word">
+    <p>
+      This is a JavaScript variable declaration. The variable <code>theme</code> represents the HTML element with the id of <code>theme</code>.
+    </p>
+  </div>
+</div>
+
+<div class="exam-qa">
+  <p class="exam-question">
+    <strong>Q6 </strong>Identify the element type and describe its function on a web page.
+  </p>
+  <div class="code-snippet">
+    <pre class="code-text mystery-code">&lt;link rel="icon" type="image/x-icon" href="/img/favicon.ico"&gt;</pre></div>
+  <div class="exam-answer blur-word">
+    <p>
+      This is an HTML element that links to the web page's favicon, the image that appears as the tab's icon.
+    </p>
+    <p>
+      The <code>rel</code> attribute indicates the relation of the linked element to the web page. The <code>href</code> tells the server that "favicon.ico" is located in the "img" folder of the root folder.
+    </p>
+  </div>
+</div>
+
+<h2 class="title-more exam-header" id="sec3">Short-Essay Questions</h2>
+  <p>
+    Practice writing short paragraphs explaining crucial HTML, CSS, and JavaScript concepts. These questions will test your knowledge of modern best practices and web development essentials. 
+  </p>
+
+<div class="exam-qa">
+  <p class="exam-question">
+    <strong>Q1 </strong>Describe what a boilerplate HTML document is, what's typically in one, and why a web developer may use one.
+  </p>
+
+  <div class="exam-answer blur-word">
+    <p>
+      A boilerplate HTML document is a essentially a standard, unfilled template or "frame" of an HTML document. It contains necessary information like the document type declaration and the <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code> tags. There is no set standard for HTML boilerplates, so some may contain information like character set declarations, viewport declarations, favicon links, or links to CSS or JavaScript libraries.
+    </p>
+    <p>
+      A web developer may use boilerplate HTML documents to speed up their web development process. Using a standardized boilerplate tailored for a specific project allows a developer to save time and more easily create uniform web pages for a website.
+    </p>
+  </div>
+</div>
+
+<div class="exam-qa">
+  <p class="exam-question">
+    <strong>Q2 </strong>Describe the difference between inline and block elements. Explain how a web developer may be able to control the display of block and inline elements.
+  </p>
+
+  <div class="exam-answer blur-word">
+    <p>
+      Block elements are HTML elements that, by default, take up the entire width of their container, forcing following elements onto a new line. Common block elements include: <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;nav&gt;</code>.
+    </p>
+    <p>
+      Inline elements are essentially the opposite of block elements. They are HTML elements that, by default, take up only the required width of its content and do not force following elements onto a new line. Common block elements include: <code>&lt;a&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;strong&gt;</code>, and <code>&lt;span&gt;</code>.
+    </p>
+    <p>
+      A web developer can control the display of elements using the CSS <code>display</code> property. For example, a web developer may set the <code>display</code> of an <code>&lt;a&gt;</code> element to "block."
+    </p>
+  </div>
+</div>
+
+<div class="exam-qa">
+  <p class="exam-question">
+    <strong>Q3 </strong>Describe how a web developer may use CSS flexbox to create a web-based menu.
+  </p>
+
+  <div class="exam-answer blur-word">
+    <p>
+      CSS flexbox is best used for content that is arranged to flow in one direction. CSS flexbox may be used in this scenario to create a row or column based menu. 
+    </p>
+    <p>
+      A single-column flexbox would be a simple flexbox-based solution for a menu. A web developer could create a flex container with items category sections. The flex container's flex direction would be set to "column" and the content's justification could be set to "flex-start," creating a simple single-column layout.
+    </p>
+    <p>
+      To add another more columns, a developer could set the flex container's wrapping behavior to "wrap" and set the height on the flex container. A set height that forces the columns to wrap would create multiple columns. 
+    </p>
+  </div>
+</div>
+
+<div class="exam-qa">
+  <p class="exam-question">
+    <strong>Q4 </strong>Describe how a web developer may use CSS grid to create a web-based menu.
+  </p>
+
+  <div class="exam-answer blur-word">
+    <p>
+      CSS grid is best used for content that needs to be flow or be assigned to a certain grid layout. CSS grid may be used in this scenario to create a grid-based menu.
+    </p>
+    <p>
+      A picture-based four-column grid would be a simple grid-based solution for a menu. A web developer could create a grid container with four columns and one row to start, then set up the grid to automatically generate new cells as new grid items are added to the grid.
+    </p>
+    <p>
+      Each grid item could be a container that consists of a picture of the menu item, the menu item's name, and the menu item's price. Additionally, when adding new items, the web developer could let the grid take care of the flow of new grid items and the generation of new cells.
+    </p>
+  </div>
+</div>
+
+<div class="exam-qa">
+  <p class="exam-question">
+    <strong>Q5 </strong>Explain why minimizing server requests is a good web development practice, and provide an example of how a web developer may minimize server requests.
+  </p>
+
+  <div class="exam-answer blur-word">
+    <p>
+      Minimizing server requests on web pages is a good web development practice because it enhances web page performance. Minimizing server requests also helps to reduces the workload on the server, enhancing performance as busy servers may be slower to send and receive data.
+    </p>
+    <p>
+       Each HTTP request to a server takes time. When visiting the web page, there is the initial HTTP request from the browser to the server. If there are elements in the HTML document like  images, linked CSS files, or linked JavaScript files, the browser sends additional HTTP requests to the server to access the resource. These HTTP requests take time, and minimizing server requests reduces the time it takes to assemble the web page. 
+    </p>
+    <p>
+      A web developer may minimize server requests by embedding CSS and JavaScript into web pages. Rather than linking to external files that send additional HTTP requests, a web developer may use the <code>&lt;style&gt;</code> and <code>&lt;script&gt;</code> tags to embed CSS rules and JavaScript directly into the HTML document.
+    </p>
+  </div>
+</div>
+
+    </section>
     </main>
 
     <footer>

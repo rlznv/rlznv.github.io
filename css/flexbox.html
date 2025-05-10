@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/styles/base.css">
     <link rel="stylesheet" type="text/css" href="/styles/base-info.css">
-    <link rel="stylesheet" id="theme" type="text/css" href="styles/light.css">
+    <link rel="stylesheet" id="theme" type="text/css" href="/styles/light.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="/js/js-init.js"></script>
     <script src="/js/darkmode.js"></script>
@@ -61,7 +61,7 @@
         <a class="nav-drop-link" href="/javascript/tricky.html">JavaScript Tricky Concepts</a>
       </div>
       <div class="nav-drop" id="more-drop">
-        <a class="nav-drop-link" href="/more">More Resources Home</a>
+        <a class="nav-drop-link" href="/more/">More Resources Home</a>
         <a class="nav-drop-link" href="/more/exam-prep.html">Exam Prep</a>
         <a class="nav-drop-link" href="/more/external-res.html">External Resources</a>
       </div>
@@ -71,33 +71,27 @@
 
       <ul class="breadcrumb">
         <li><a href="/index.html">Home</a></li>
-        <li><a href="/html/">Item</a></li>
-        <li><a href="/css/">Item</a></li>
-        <li><a href="/javascript/">Item</a></li>
-        <li><a href="/more/">Item</a></li>
-        <li>Current Page</li>
+        <li><a href="/css/">CSS</a></li>
+        <li><a href="/css/flexbox.html">CSS Flexbox</a></li>
       </ul> 
 
-      <h1 class="info-h1 title-html">CSS Flexbox</h1>
+      <h1 class="info-h1 title-css">CSS Flexbox</h1>
 
       <section class="info-sect">
         
-        <h2>Flexible Box Layout Module</h2>
+        <h2 class="exam-header title-css">Introduction</h2>
         <p>The CSS Flexible Box Layout Module, or Flexbox, is a one dimensional layout system for rows and columns. It provides responsive design advantages such as making all neighboring items the same height, creating simple horizontal and vertical centering, and changing the order in which the items are displayed.
         </p>
         <article class="toc-wrapper">
           <h3 class="toc-title">Table of Contents</h3>
           <ul class="toc">
-            <li><a class="toc-link" href="#">Item</a></li>
-            <li><a class="toc-link" href="#">Item</a></li>
-            <li><a class="toc-link" href="#">Item</a></li>
-            <li><a class="toc-link" href="#">Item</a></li>
-           <li><a class="toc-link" href="#">Item</a></li>
+            <li><a class="toc-link" href="#flex-create">Flexbox Creation</a></li>
+            <li><a class="toc-link" href="#flow-direction-wrap">Flex Item Properties</a></li>
           </ul>
         </article>
-        <h3>How to create a Flexbox</h3>
+        <h3 class="exam-header title-css" id="flex-create">Flexbox Creation</h3>
         <h4>Step One: Setting up a Flexbox Container</h4>
-        <p>In the body of the HTML text file, create a div tag with a class titled correspondence to the name of your boxes. This will be the container for your flexbox. Inside the div, create a number of divs with a different class name for each box. Each of these will be the boxes inside the flexbox.
+        <p>In the body of the HTML text file, create a div tag with a class titled corresponding to the name of your boxes. This will be the container for your flexbox. Inside the div, create a number of divs with different class names for each box. Each of these will be the boxes inside the flexbox.
           Markup Example:<br></p>
         <div class="code-snippet">
         <pre class="code-text css-code">
@@ -118,8 +112,9 @@
       <pre class="code-text css-code">
 #container&#123; display: flex;&#125;</pre>
       </div>
-      <h4>Step Two: Specifying Flow Direction and Wrap</h4>
-          <p>Now that the Flexbox is created, you can now adjust the flow direction and wrap of the container and items. For examples and additional help, go to <a href="/" class="https://flexbox.help/">Flexbox Help</a>
+      <h4 id="flow-direction-wrap">Step Two: Specifying Flow Direction and Wrap</h4>
+          <p>Now that the Flexbox is created, you can adjust the flow direction and wrap of the container and items. </p>
+          <p>We recommend trying out <a class="inline-link external" href="https://flexbox.help/">flexbox.help's</a> interactive flexbox generator to test out flexbox's different behaviors. 
           </p>
       <h5>Flow Direction</h5>
       <p>To control the flow of the flex items, the <b>flex-direction</b> property must be modified. The default value for the <b>flex-direction</b> property is <em>row</em>, which arranges the flex items from left to right. This property is be placed in the container id within the stylesheet.</p>
@@ -134,7 +129,7 @@
             <ul><li>The <em>column-reverse</em> value modifies the direction to arrange vertically from bottom to top.</li></ul>
       </ul>
       <h5>Flex Wrap</h5>
-      <p>The <b>flex-wrap property</b> allows the flex items to break off or wrap into a new line. The default value for the property is <em>nonwrap</em>, which disables wrapping. The <b>flex-wrap</b> is be placed in the container id within the stylesheet.</p>
+      <p>The <b>flex-wrap property</b> allows the flex items to break off or wrap into a new line. The default value for the property is <em>nonwrap</em>, which disables wrapping. The <b>flex-wrap</b> is placed in the container id within the stylesheet.</p>
         <ul>
           <li>flex-wrap: nonwrap;
             <ul><li>The <em>nonwrap</em> value disables wrapping.</li></ul>
@@ -156,7 +151,7 @@
             <ul><li>The <em>column wrap</em> value orders the flex items vertically from top to bottom and allows wrapping.</li></ul>
         </ul>
 
-      <h4>Step Three: Aligning the Flex Items</h4>
+      <h4 id="flexbox-align">Step Three: Aligning the Flex Items</h4>
       <h5>Aligning on the Main Axis</h5>
       <p>To align the flex items on the main axis, use the <b>justify-content</b> property which alters how space within the container moves around or between the flex items. The default value for the property is <em>flex-start</em> which positions the items at the start of the main axis. This property can be used no matter what value is set to the <b>flex-direction</b> of the container. The alignment will apply to the container whether it is arranged horizontally or vertically. The property will be placed in the container id within the stylesheet.</p>
         <ul>
@@ -202,8 +197,8 @@
             <ul><li>The <em>space-around</em> value positions the flex items with space around them.</li></ul>
         </ul>
 
-      <h3>Flex Item Properties</h3>
-        <p>Flex properties are applied to flex items instead of the container. The values of the <b>flex</b> properties include the properties: <em>flex-grow</em>, <em>flex-shrink</em>, and <em>flex-basis</em>. When creating the markup for the <b>flex</b> property, be sure to order the values listed in the order:
+      <h3 class="exam-header title-css" id="prop">Flex Item Properties</h3>
+        <p>Flex properties are applied to flex items instead of the container. The values of the <b>flex</b> properties include the properties: <em>flex-grow</em>, <em>flex-shrink</em>, and <em>flex-basis</em>. When creating the markup for the <b>flex</b> property, be sure to order the values like so:</p>
         <div class="code-snippet">
           <pre class="code-text css-code">
 flex: flex-grow flex-shink flex-basis;</pre>
@@ -215,59 +210,25 @@ flex: flex-grow flex-shink flex-basis;</pre>
         </div>
     
       <h4>Item Expansion</h4>
-      <p>The <b>flex-grow</b> p allows for flex items to expand to fill the available space in the container. The default value for the property is <em>0</em>, which disables expansion. The property is placed under a new id for the singular flex item in the stylesheet. Ensure that the id name matches the id given in the HTML markup. The <em>flex-grow</em> value is the first value written in the <b>flex</b> property.</p>
+      <p>The <b>flex-grow</b> property allows for flex items to expand to fill the available space in the container. The default value for the property is <em>0</em>, which disables expansion. The property is placed under a new id for the singular flex item in the stylesheet. Ensure that the id name matches the id given in the HTML markup. The <em>flex-grow</em> value is the first value written in the <b>flex</b> property.</p>
       <h4>Item Shrinkage</h4>
       <p>The <b>flex-shrink</b> property allows for flex items to shrink to fit the container. The default value for the property is <em>1</em>, which allows the flex items to shrink. The property is placed under a new id for the singular flex item in the stylesheet. Ensure that the id name matches the id given in the HTML markup. The <em>flex-shrink</em> value is the second value written in the <b>flex</b> property.</p>
       <h4>Item Basis</h4>
       <p>The <b>flex-basis</b> property allows for flex items to set a base size. The default value for the property is <em>auto</em>, which sets the base size to the width of the item. The property is placed under a new id for the singular flex item in the stylesheet. Ensure that the id name matches the id given in the HTML markup. The <em>flex-basis</em> value is the third value written in the <b>flex</b> property.</p>
       <h4>Item Order</h4>
-      <p> The <b>order</b> property has the ability to reorder flex items. The style markup is placed under a new ID for the singular flex item in the stylesheet. Ensure that the ID name matches the id given in the HTML markup. The default value for the property is <em>0</em>, which orders the flex items in the order they are written in the HTML markup. The flex items are reordered by assigning a positive or negative integer value to the property. The lower the number, the higher up in the order it will be placed. For example, if you want to move box 5 to be first in line, you would assign it a value of -1 and all other boxes a value of 0 or higher.</p>
+      <p> The <b>order</b> property has the ability to reorder flex items. The style markup is placed under a new id for the singular flex item in the stylesheet. Ensure that the id name matches the id given in the HTML markup. The default value for the property is <em>0</em>, which orders the flex items in the order they are written in the HTML markup. The flex items are reordered by assigning a positive or negative integer value to the property. The lower the number, the higher up in the order it will be placed.</p>
+      <p>For example, if you want to move box 5 to be first in line, you would assign it a value of -1 and all other boxes a value of 0 or higher.</p>
       <div class="code-snippet">
         <pre class="code-text css-code">
   .box4 &#123;order: -1&#125;</pre>
         </div>
       <h4>Item Alignment</h4>
-      <p>To align individual flex items on the cross axis, use the <b>align-self</b> property, which applies the set value to the specified items. The default value for the property is <em>stretch</em>. The property is placed under a new class for the singular flex item in the stylesheet. Ensure that the class name matches the id given in the HTML markup.<br>
-      Markup Example:</p>
+      <p>To align individual flex items on the cross axis, use the <b>align-self</b> property, which applies the set value to the specified items. The default value for the property is <em>stretch</em>. The property is placed under a new class for the singular flex item in the stylesheet. Ensure that the class name matches the id given in the HTML markup.</p>
       <div class="code-snippet">
       <pre class="code-text css-code">
 .box4 &#123;align-self: flex-end;&#125;</pre>
       </div>
 
-        <figure>
-          <img alt=" " src="/img/placeholder.svg"> 
-        </figure>
-        <h2>List Title</h2>
-        <ul>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-          <li>item
-            <ul>
-              <li>2nd level item</li>
-              <li>2nd level item</li>
-              <li>2nd level item</li>
-            </ul>
-          </li>
-        </ul>
-        
-        <h3>List Subtitle</h3>
-        
-        <ol>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-          <li>item
-            <ol>
-              <li>2nd level item</li>
-              <li>2nd level item</li>
-              <li>2nd level item</li>
-            </ol>
-          </li>
-        </ol>
-        
       </section>
     </main>
 

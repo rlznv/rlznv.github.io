@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/styles/base.css">
     <link rel="stylesheet" type="text/css" href="/styles/base-info.css">
-    <link rel="stylesheet" id="theme" type="text/css" href="styles/light.css">
+    <link rel="stylesheet" id="theme" type="text/css" href="/styles/light.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="/js/js-init.js"></script>
     <script src="/js/darkmode.js"></script>
@@ -61,7 +61,7 @@
         <a class="nav-drop-link" href="/javascript/tricky.html">JavaScript Tricky Concepts</a>
       </div>
       <div class="nav-drop" id="more-drop">
-        <a class="nav-drop-link" href="/more">More Resources Home</a>
+        <a class="nav-drop-link" href="/more/">More Resources Home</a>
         <a class="nav-drop-link" href="/more/exam-prep.html">Exam Prep</a>
         <a class="nav-drop-link" href="/more/external-res.html">External Resources</a>
       </div>
@@ -71,59 +71,123 @@
 
       <ul class="breadcrumb">
         <li><a href="/index.html">Home</a></li>
-        <li><a href="/html/">Item</a></li>
-        <li><a href="/css/">Item</a></li>
-        <li><a href="/javascript/">Item</a></li>
-        <li><a href="/more/">Item</a></li>
-        <li>Current Page</li>
+        <li><a href="/html/index.html">HTML</a></li>
+        <li><a href="/html/tricky.html">HTML Tricky Concepts</a></li>
       </ul> 
 
       <h1 class="info-h1 title-html">HTML Tricky Concepts</h1>
 
       <section class="info-sect">
+        <h2 class="title-html exam-header">Introduction</h2>
+          <p>HTML is a markup language that is used to create the structure of web pages. It is important to understand the basic and tricky concepts of HTML in order to create well-structured and accessible web pages.</p>
+        <article class="toc-wrapper">
+          <h3 class="toc-title">Table of Contents</h3>
+          <ul class="toc">
+            <li><a class="toc-link" href="#mac">MacOS Document</a></li>
+            <li><a class="toc-link" href="#windows">Windows Document</a></li>
+            <li><a class="toc-link" href="#valid">Document Validation</a></li>
+            <li><a class="toc-link" href="#files">Files and Folders</a></li>
+           <li><a class="toc-link" href="#characters">Special Characters</a></li>
+          </ul>
+        </article>
         
-        <h2>Creating a new document in TextEdit (macOS)</h2>
-        <h3>Step 1</h3>
-        <div class="code-snippet">
-          <pre class="code-text html-code">
-<p>Open TextEdit application on your macOS. It can be found using Finder then searching through the Applications Folder. </p>
-          </pre>
-        </div>
-        <h3>Step 2</h3>
-        <div class="code-snippet">
-          <pre class="code-text html-code">
-            <p>Once you Open TextEdit, click the New Document button. If you see a text formatting menu and a tab ruler you are in rich-text mode. If not you are in plain-text mode.</p>
-          </pre>
-        </div>
-        <h3>Step 3</h3>
-        <div class="code-snippet">
-          <pre class="code-text html-code">
+        <h3 class="title-html exam-header" id="mac">Creating a Text File in MacOS TextEdit</h3>
+        <h4>Step 1</h4>
+          <p>Open TextEdit application on your macOS. It can be found using Finder then searching through the Applications Folder. </p>
+          <figure>
+            <img alt=" " src="/img/step1.jpeg"> 
+          </figure>
+        <h4>Step 2</h4>
+          <p>Once you Open TextEdit, click the New Document button. If you see a text formatting menu and a tab ruler, you are in rich-text mode. If not, you are in plain-text mode.</p>
+          <figure>
+            <img alt=" " src="/img/step2.jpeg"> 
+          </figure>
+        <h4>Step 3</h4>
             <p>Close the document and head towards the top of your macOS system. Next to the Apple symbol, the TextEdit tab should be next to it. Hover over the TextEdit and click on Settings.</p>
-          </pre>
-        </div>
-        <h3>Step 4</h3>
-        <div class="code-snippet">
-          <pre class="code-text html-code">
-            <p>On the New Document tab click on plain text. Under Options uncheck all of the automatic formatting options. On the Open and Save tab, select Display HTML files as HTML Code 5. Deselect "Add '.txt.' extension to plain text files."</p>
-          </pre>
-        </div>
-        <h3>Step 5</h3> 
-        <div class="code-snippet">
-          <pre class="code-text html-code">
-            <p>The rest of the defaults should be good as they are. When you are done, click on the button of the settings box.</p>
-          </pre>
-        </div>
-        <h3>Step 6</h3>
-        <div class="code-snippet">
-          <pre class="code-text html-code">
-            <p>Now you can click on the File tab next to TextEdit and click New to create a New Document. The original settings are reverted to the new changes.</p>
-          </pre>
-        </div>
-
+            <figure>
+              <img alt=" " src="/img/step3.jpeg"> 
+            </figure>
+            <h4>Step 4</h4>
+            <p>On the New Document tab click on plain text. Under Options uncheck all of the automatic formatting options. On the Open and Save tab, select Display HTML files as HTML Code 5. Next, deselect "Add '.txt.' extension to plain text files."</p>
+            <figure>
+              <img alt=" " src="/img/step4.jpeg"> 
+            </figure>
+            <h4>Step 5</h4> 
+            <p>The rest of the defaults should be good as they are. When you are done, click on the red button of the settings box.</p>
+            <figure>
+              <img alt=" " src="/img/step5.jpeg"> 
+            </figure>
+            <h4>Step 6</h4>
+            <p>Finally, you can click on the File tab next to TextEdit and click New to create a New Document. The original settings are reverted to the new changes.</p>
         <p><b>Note: </b>You can convert the document back to rich-text mode when you are not using TextEdit for HTML.</p>
-        
-        <h3>Why do we change the settings for TextEdit?</h3>
-        <p>Changing the settings for TextEdit allows for proper rendering of the code on the website.</p>
+        <h4>Why do we change the settings for TextEdit?</h4>
+        <p>Changing the settings for TextEdit allows for proper rendering of the code on the website. The default settings are not suitable for HTML coding. The settings we changed allow for the code to be displayed as it is without any formatting or changes.</p>
+        <h3 class="title-html exam-header" id="windows">Creating a Text File in Windows' Notepad</h3>
+        <h4>Step 1</h4>
+        <p>Open Notepad to create a new document window. For quicker access, use the search feature in your applications folder.</p>
+        <figure>
+          <img alt="Image of Notepad application" src="/img/stepone_windows.jpeg">
+        </figure>
+        <h4>Step 2</h4>
+        <p>Once you have opened Notepad a new untitled page will appear. If you navigated to a previously used page, click the add button to open up a new untitled page.</p>
+        <figure>
+          <img alt="Image of a Notepad untitled page" src="/img/steptwo_windows.jpeg">
+        </figure>
+        <h4>Step 3</h4>
+        <p>Begin writing HTML in the page. Remember to use the basic document structure. Refer to <a class="inline-link" href="/html/main.html">HTML Main Guide</a> for help.</p>
+        <figure>
+          <img alt="Image of a Notepad page with the basic HTML document structure tags" src="/img/stepthree_windows.jpeg">
+        </figure>
+        <h4>Step 4</h4>
+        <p>Click the File tab to open a dropdown menu. Find Save As and click on it to save the document.</p>
+        <figure>
+          <img alt="Image of the File tab's drop-down menu" src="/img/stepfour_windows.jpeg">
+        </figure>
+        <h4>Step 5</h4>
+        <p>In the Save As window, select the location you want to save the file to then name the file. Remember to add the .html extension at the end of the file name. This is important because without the extension, the file will not be recognized as an HTML file. Be sure to select All Files in the Save as type dropdown menu and check the encoding is set to UTF-8. Click Save.</p>
+        <figure>
+          <img alt="Image of the Save As window" src="/img/stepfive_windows.jpeg">
+        </figure>
+        <h4>Step 6</h4>
+        <p>To open the file in a web browser, navigate to the location where you saved the file. Double-click on the HTML file to open into your default browser or right-click on the file and select Open with to choose your preferred web browser from the list.</p>
+         <figure>
+          <img alt="Image of a web page" src="/img/stepsix_windows.jpeg">
+        </figure>
+
+        <h3 class="title-html exam-header" id="valid">Document Validation</h3>
+        <p>Document validation is the process of checking the markup of a document to ensure that it is valid and follows the rules of HTML. This is important because invalid markup can lead to rendering issues and accessibility problems. Here are common mistakes to check for:</p>
+          <ul>
+            <li>DOCTYPE declaration
+              <ul><li>Without the declaration, the browser may not render the page properly to the correct version of HTML.</li></ul>
+            <li>Incorrect tags
+              <ul><li>Missing or incorrect closing tags.</li></ul>
+            <li>Nesting errors
+              <ul><li>Nesting lists tags.</li></ul>
+          </ul>
+        <h3 class="title-html exam-header" id="files">Files and Folder Organization</h3>
+        <p>Organizing your files and folders is important for keeping your project structured and easy to navigate. Here are some tips for organizing your files and folders:
+          <ul>
+            <li>Use descriptive names for your files and folders.</li>
+            <li>Use a consistent naming convention.</li>
+            <li>Use names without spaces for your files and folders.
+              <ul>
+                <li>To avoid spaces, you can use snake case (like_this), kebab case (like-this), camel case (likeThis), or Pascal case (LikeThis). </li>
+              </ul>
+            </li>
+            <li>Group related files together in folders.</li>
+            <li>Keep your project folder clean and free of unnecessary files.</li>
+            <li>Use subfolders to organize your files further.</li>
+          </ul>
+        <p>File and folder organization helps you use the correct relative path to link images, stylesheets, or scripts to your HTML document. This is important because if the file path is incorrect, the browser will not be able to find the file and it will not be displayed on the page. It may be helpful to create a sitemap of your website to organize your files and folders in the correct location.</p>
+        <h3 class="title-html exam-header" id="characters">Special Characters</h3>
+        <p>HTML uses special characters to represent certain symbols and characters that have a special meaning in HTML. These characters are called character entities or escape characters. Here are some common character entities:
+          <ul>
+            <li><code>&amp;lt;</code> - less than</li>
+            <li><code>&amp;gt;</code> - greater than</li>
+            <li><code>&amp;amp;</code> - ampersand</li>
+            <li><code>&amp;quot;</code> - double quote</li>
+            <li><code>&amp;#39;</code> - single quote</li>
+          </ul>
       </section>
     </main>
 

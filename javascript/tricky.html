@@ -44,26 +44,26 @@
 
     <div id="drop-container">
       <div class="nav-drop" id="html-drop">
-        <a class="nav-drop-link" href="/html">HTML Home</a>
-        <a class="nav-drop-link" href="/html">HTML Main Guide</a>
-        <a class="nav-drop-link" href="/html">HTML Tricky Concepts</a>
+        <a class="nav-drop-link" href="/html/">HTML Home</a>
+        <a class="nav-drop-link" href="/html/main.html">HTML Main Guide</a>
+        <a class="nav-drop-link" href="/html/tricky.html">HTML Tricky Concepts</a>
       </div>
       <div class="nav-drop" id="css-drop">
         <a class="nav-drop-link" href="/css/">CSS Home</a>
-        <a class="nav-drop-link" href="/css">CSS Main Guide</a>
-        <a class="nav-drop-link" href="/css">CSS Grid</a>
-        <a class="nav-drop-link" href="/css">CSS Flexbox</a>
-        <a class="nav-drop-link" href="/css">CSS Tricky Concepts</a>
+        <a class="nav-drop-link" href="/css/main.html">CSS Main Guide</a>
+        <a class="nav-drop-link" href="/css/grid.html">CSS Grid</a>
+        <a class="nav-drop-link" href="/css/flexbox.html">CSS Flexbox</a>
+        <a class="nav-drop-link" href="/css/tricky.html">CSS Tricky Concepts</a>
       </div>
       <div class="nav-drop" id="js-drop">
-        <a class="nav-drop-link" href="/javascript">JavaScript Home</a>
-        <a class="nav-drop-link" href="/javascript">JavaScript Main Guide</a>
-        <a class="nav-drop-link" href="/javascript">JavaScript Tricky Concepts</a>
+        <a class="nav-drop-link" href="/javascript/">JavaScript Home</a>
+        <a class="nav-drop-link" href="/javascript/main.html">JavaScript Main Guide</a>
+        <a class="nav-drop-link" href="/javascript/tricky.html">JavaScript Tricky Concepts</a>
       </div>
       <div class="nav-drop" id="more-drop">
-        <a class="nav-drop-link" href="/more">More Resources Home</a>
-        <a class="nav-drop-link" href="/more">Exam Prep</a>
-        <a class="nav-drop-link" href="/more">External Resources</a>
+        <a class="nav-drop-link" href="/more/">More Resources Home</a>
+        <a class="nav-drop-link" href="/more/exam-prep.html">Exam Prep</a>
+        <a class="nav-drop-link" href="/more/external-res.html">External Resources</a>
       </div>
     </div>
 
@@ -71,22 +71,58 @@
 
       <ul class="breadcrumb">
         <li><a href="/index.html">Home</a></li>
-        <li><a href="/html/">Item</a></li>
-        <li><a href="/css/">Item</a></li>
-        <li><a href="/javascript/">Item</a></li>
-        <li><a href="/more/">Item</a></li>
-        <li>Current Page</li>
+        <li><a href="/html/">JavaScript</a></li>
+        <li><a href="/css/">JavaScript Tricky Concepts</a></li>
       </ul> 
 
       <h1 class="info-h1 title-js">JavaScript Tricky Concepts</h1>
-
       <section class="info-sect">
+        <h2 class="title-js exam-header">Introduction</h2>
+        <p>JavaScript is a complex and powerful programming language that can be used to create interactive web pages. In this course, you will not be covering JavaScript in depth, however it is important to recognize the code when you see these scripts. It can be tricky to work with so here are some common tricky concepts in JavaScript:</p>
+        <article class="toc-wrapper">
+          <h3 class="toc-title">Table of Contents</h3>
+          <ul class="toc">
+            <li><a class="toc-link" href="#trouble">Troubleshooting Methods</a></li>
+            <li><a class="toc-link" href="#js-libaries">JavaScript Libraries</a></li>
+          </ul>
+        </article>
         
-        <h2>Troubleshooting Methods</h2>
-        <h3>Testing in Different Browsers</h3>
+        <h3 class="title-js exam-header" id="trouble">Troubleshooting Methods</h3>
+        <h4>Test in Different Browsers</h4>
         <p>To make sure your code is working properly, testing your code in different browser types can help determine errors.</p>
-        <h3>Review Code</h3>
-        <p>Having someone else check your code for any syntax errors or any potential errors can help minimize those errors.</p>
+        <h4>Review Your Code</h4>
+        <p>
+          If your code isn't working, try asking someone to review your code. A pair of fresh eyes may be able to catch errors you've missed.
+        </p>
+        <p>
+          If you can't find anyone to review your code, try <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging" class="inline-link external">rubber duck debugging</a>. Pretending to explain your code, line-by-line, to someone who understands nothing about the code may help you run through the logic of your code and find potential errors. 
+        </p>
+        <h4>Lint Your Code</h4>
+        <p>
+          Using a JavaScript linter (a linting program) is an easy way to troubleshoot your JavaScript code.
+        </p>
+        <p>
+          Like using a lint roller on clothes, a linter is a program that analyzes code to catch potential errors. You can use programs like <a href="https://www.jslint.com/" class="inline-link external">JSLint</a> or <a href="https://eslint.org/" class="inline-link external">ESLint</a> to analyze your JavaScript code.
+        </p>
+        <h4>Use an IDE with Debugging Features</h4>
+        <p>
+          Some IDEs (integrated development environments), Visual Studio Code, for example, comes with built-in debugging features. These debugging features can catch errors in your code as you're writing it and during the code's execution. 
+        </p>
+        <p>
+          If your code isn't working and your IDE's showing errors and warnings, that may explain your problem.
+        </p>
+        <h3 class="title-js exam-header" id="js-libaries">JavaScript Libraries</h3>
+        <p>You may have heard about the power of JavaScript libraries and frameworks that can take your projects to the next level. However, it's important to keep in mind that libraries and frameworks aren't exactly the same thing.</p>
+        <p>JavaScript libraries are pre-written JavaScript code that can be integrated into existing projects to provide visual flair, functionality, and interactive behavior to web pages.</p>
+        <p>On the other hand, JavaScript frameworks are structured, comprehensive tools that can be used to <em>build</em> web pages and applications. JavaScript frameworks are much more comprehensive than libraries, providing a structured way to build both the front ends <em>and</em> back ends of web pages and applications.</p>
+
+        <p>Some popular JavaScript libraries include:</p>
+        <ul>
+          <li>jQuery</li>
+          <li>Bootstrap</li>
+          <li>ReactJS</li>
+        </ul>
+        <p>For this class, you will touch on JavaScript only a small portion of the class. If you include JavaScript, it will most likely be pulled from JavaScript libraries rather than hand-writing the code. It is important to understand the anatomy of JavaScript enough to recogonize it and what it does when you come across it.</p>
       </section>
     </main>
 
@@ -98,32 +134,32 @@
       
       <div class="f-stack" id="f-html">
         <p class="f-title">HTML</p>
-        <a class="f-link" href="/html/">HTML Landing Page</a>
-        <a class="f-link" href="/html/">HTML Main Guide</a>
-        <a class="f-link" href="/html/">HTML Tricky Concepts</a>
+        <a class="f-link" href="/html/index.html">HTML Landing Page</a>
+        <a class="f-link" href="/html/main.html">HTML Main Guide</a>
+        <a class="f-link" href="/html/tricky.html">HTML Tricky Concepts</a>
       </div>
 
       <div class="f-stack" id="f-css">
         <p class="f-title">CSS</p>
-        <a class="f-link" href="/css/">CSS Landing Page</a>
-        <a class="f-link" href="/css/">CSS Main Guide</a>
-        <a class="f-link" href="/css/">CSS Grid</a>
-        <a class="f-link" href="/css/">CSS Flexbox</a>
-        <a class="f-link" href="/css/">CSS Tricky Concepts</a>
+        <a class="f-link" href="/css/index.html">CSS Landing Page</a>
+        <a class="f-link" href="/css/main.html">CSS Main Guide</a>
+        <a class="f-link" href="/css/grid.html">CSS Grid</a>
+        <a class="f-link" href="/css/flexbox.html">CSS Flexbox</a>
+        <a class="f-link" href="/css/tricky.html">CSS Tricky Concepts</a>
       </div>
       
       <div class="f-stack" id="f-js">
         <p class="f-title">JavaScript</p>
-        <a class="f-link" href="/javascript/">JavaScript Landing Page</a>
-        <a class="f-link" href="/javascript/">JavaScript Main Guide</a>
-        <a class="f-link" href="/javascript/">JavaScript Tricky Concepts</a>
+        <a class="f-link" href="/javascript/index.html">JavaScript Landing Page</a>
+        <a class="f-link" href="/javascript/main.html">JavaScript Main Guide</a>
+        <a class="f-link" href="/javascript/tricky.html">JavaScript Tricky Concepts</a>
       </div>
       
       <div class="f-stack" id="f-more">
         <p class="f-title">More Resources</p>
-        <a class="f-link" href="/more/">More Resources Landing Page</a>
-        <a class="f-link" href="/more/">Exam Prep</a>
-        <a class="f-link" href="/more/">External Resources</a>
+        <a class="f-link" href="/more/index.html">More Resources Landing Page</a>
+        <a class="f-link" href="/more/exam-prep.html">Exam Prep</a>
+        <a class="f-link" href="/more/external-res.html">External Resources</a>
       </div>
     </footer>
   

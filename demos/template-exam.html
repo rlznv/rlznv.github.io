@@ -13,6 +13,7 @@
     <script src="/js/darkmode.js"></script>
     <script src="/js/dropmenu.js"></script>
     <script src="/js/hamburger.js"></script>
+    <script src="/js/blur.js"></script>
   </head>
   
   <body >
@@ -68,7 +69,6 @@
     </div>
 
     <main>
-
       <ul class="breadcrumb">
         <li><a href="/index.html">Home</a></li>
         <li><a href="/html/">Item</a></li>
@@ -77,17 +77,14 @@
         <li><a href="/more/">Item</a></li>
         <li>Current Page</li>
       </ul> 
-
-      <h1 class="info-h1 title-html">Page Title Placeholder</h1>
-
+      
+      <h1 class="title-more info-h1">Exam Help h1 Placeholder </h1>
       <section class="info-sect">
-        
-        <h2>Section Title Placeholder (h2 test)</h2>
-        <h3>h3 test</h3>
-        <h4>h4 test</h4>
+        <h2>Section Title h2 Placeholder</h2>
         <p>
           I am placeholder text. <a href="/" class="inline-link external">I am an inline link.</a> Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
         </p>
+
         <article class="toc-wrapper">
           <h3 class="toc-title">Table of Contents</h3>
           <ul class="toc">
@@ -95,75 +92,55 @@
             <li><a class="toc-link" href="#">Item</a></li>
             <li><a class="toc-link" href="#">Item</a></li>
             <li><a class="toc-link" href="#">Item</a></li>
-           <li><a class="toc-link" href="#">Item</a></li>
+            <li><a class="toc-link" href="#">Item</a></li>
           </ul>
         </article>
-        <h3>Subsection Title Placeholder</h3>
+
+        <h2 class="title-html exam-header">I am a h2 placeholder</h2>
         <p>
-          I am placeholder text. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+          I am placeholder text. <a href="/" class="inline-link external">I am an inline link.</a> Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
         </p>
-        <div class="code-snippet">
-          <pre class="code-text js-code">const blurWordArray = document.querySelectorAll(".blur-word");
-blurWordArray.forEach(element => {
-element.addEventListener("click", () => {
-element.classList.toggle("unblur-word");
-});
-});</pre>
+
+        <h3 class="title-css exam-header">I am a h3 placeholder</h3>
+<!-- Q&A Box template -->
+        <div class="exam-qa">
+<!-- Question template -->
+          <p class="exam-question">
+            <strong>Q1</strong> Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+          </p>
+<!-- Answer template -->
+         <div class="exam-answer blur-word">
+            <p>
+              I am placeholder text. <a href="/" class="inline-link external">I am an inline link.</a> Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+            </p>
+          </div>
         </div>
-          
-        <div class="code-snippet">
-          <pre class="code-text css-code">const blurWordArray = document.querySelectorAll(".blur-word");
-blurWordArray.forEach(element => {
-element.addEventListener("click", () => {
-element.classList.toggle("unblur-word");
-});
-});</pre>
+<!-- Q&A Box template -->
+        <div class="exam-qa">
+<!-- Question template -->
+          <p class="exam-question">
+            <strong>Q2</strong> Draw and/or describe the block of code below.
+          </p>
+<!-- Code snippet within Q&A box template -->
+          <div class="code-snippet">
+            <pre class="code-text css-code">const blurWordArray = document.querySelectorAll(".blur-word");
+  blurWordArray.forEach(element => {
+  element.addEventListener("click", () => {
+  element.classList.toggle("unblur-word");
+  });
+  });</pre>
+          </div>
+<!-- Answer template -->
+         <div class="exam-answer blur-word">
+<!-- Image as answer template -->
+            <figure>
+              <img style="height: 5em;" alt=" " src="/img/placeholder.svg">
+            </figure>
+          </div>
         </div>
 
-        <div class="code-snippet">
-          <pre class="code-text html-code">const blurWordArray = document.querySelectorAll(".blur-word");
-blurWordArray.forEach(element => {
-element.addEventListener("click", () => {
-element.classList.toggle("unblur-word");
-});
-});</pre>
-        </div>
-
-        <figure>
-          <img alt=" " src="/img/placeholder.svg"> 
-        </figure>
-        <h2>List Title</h2>
-        <ul>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-          <li>item
-            <ul>
-              <li>2nd level item</li>
-              <li>2nd level item</li>
-              <li>2nd level item</li>
-            </ul>
-          </li>
-        </ul>
-        
-        <h3>List Subtitle</h3>
-        
-        <ol>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-          <li>item
-            <ol>
-              <li>2nd level item</li>
-              <li>2nd level item</li>
-              <li>2nd level item</li>
-            </ol>
-          </li>
-        </ol>
-        
       </section>
+
     </main>
 
     <footer>

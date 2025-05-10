@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/styles/base.css">
     <link rel="stylesheet" type="text/css" href="/styles/base-info.css">
-    <link rel="stylesheet" id="theme" type="text/css" href="styles/light.css">
+    <link rel="stylesheet" id="theme" type="text/css" href="/styles/light.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="/js/js-init.js"></script>
     <script src="/js/darkmode.js"></script>
@@ -61,7 +61,7 @@
         <a class="nav-drop-link" href="/javascript/tricky.html">JavaScript Tricky Concepts</a>
       </div>
       <div class="nav-drop" id="more-drop">
-        <a class="nav-drop-link" href="/more">More Resources Home</a>
+        <a class="nav-drop-link" href="/more/">More Resources Home</a>
         <a class="nav-drop-link" href="/more/exam-prep.html">Exam Prep</a>
         <a class="nav-drop-link" href="/more/external-res.html">External Resources</a>
       </div>
@@ -71,32 +71,27 @@
 
       <ul class="breadcrumb">
         <li><a href="/index.html">Home</a></li>
-        <li><a href="/html/">Item</a></li>
-        <li><a href="/css/">Item</a></li>
-        <li><a href="/javascript/">Item</a></li>
-        <li><a href="/more/">Item</a></li>
-        <li>Current Page</li>
+        <li><a href="/css/">CSS</a></li>
+        <li><a href="/css/grid.html">CSS Grid</a></li>
       </ul> 
 
-      <h1 class="info-h1 title-html">CSS Grid</h1>
+      <h1 class="info-h1 title-css">CSS Grid</h1>
 
       <section class="info-sect">
         
-        <h2>Grid Layout Module</h2>
+        <h2 class="exam-header title-css">Introduction</h2>
         <p>
-          The CSS Grid Layout Module is a two-dimensional layout system for rows and columns.Grid Layout is a system that allows for complex layouts although it is not as flexible as Flexbox. Grid is best used for larger scale layouts.
+          The CSS Grid is a two-dimensional layout system for creating rows and columns. CSS Grid allows for complex layouts although it is not as flexible as Flexbox. Grid is best used for larger scale layouts.
         </p>
         <article class="toc-wrapper">
           <h3 class="toc-title">Table of Contents</h3>
           <ul class="toc">
-            <li><a class="toc-link" href="#">Item</a></li>
-            <li><a class="toc-link" href="#">Item</a></li>
-            <li><a class="toc-link" href="#">Item</a></li>
-            <li><a class="toc-link" href="#">Item</a></li>
-           <li><a class="toc-link" href="#">Item</a></li>
+            <li><a class="toc-link" href="#grid-term">Grid Terminology</a></li>
+            <li><a class="toc-link" href="#grid-create">Grid Creation</a></li>
+            <li><a class="toc-link" href="#grid-behave">Grid Behavior</a></li>
           </ul>
         </article>
-        <h3>Grid Terminology</h3>
+        <h3 class="exam-header title-css" id="grid-term">Grid Terminology</h3>
         <p>To fully understand why and how we use the CSS Grid Layout, you must become familiar with the commonly used terms.</p>
         <ul>
           <li><b>Grid Container:</b> The parent element that contains the grid items.</li>
@@ -106,7 +101,7 @@
           <li><b>Grid Line:</b> The lines that form the structure of the grid. They can be horizontal or vertical.</li>
           <li><b>Grid Area:</b> The space enclosed by grid layout; area inside the container. It can contain one or more adjacent grid cells.</li>
         </ul>
-        <h3>How to create a Grid</h3>
+        <h3 class="exam-header title-css" id="grid-create">Grid Creation</h3>
         <h4>Step One: Setting up a Grid Layout</h4>
         <p>In the body of the HTML text file, create a div tag with a id titled corresponding to the layout of your grid. This will be the container for your grid. Inside the div, create a number of divs with different id titles for each grid item. Each of these will be the boxes inside the container.<br>
           Markup Example:</p>
@@ -131,7 +126,7 @@
       </div>
       <h4>Step Two: Creating Grid Tracks</h4>
         <p>
-          The next step is to create grid tracks. Grid tracks are the rows and columns of the grid. To create grid tracks, use the <b>grid-template-columns</b> and <b>grid-template-rows</b> properties. You can specify the size of each track using different units such as pixels, percentages, or fractions. It is important to understand the units of measurement in CSS, for additional help, check out <a href="/css/tricky.html">CSS Tricky Concepts</a>.<br>
+          The next step is to create grid tracks. Grid tracks are the rows and columns of the grid. To create grid tracks, use the <b>grid-template-columns</b> and <b>grid-template-rows</b> properties. You can specify the size of each track using different units such as pixels, percentages, or fractions. It is important to understand the units of measurement in CSS, for additional help, check out <a class="inline-link" href="/css/tricky.html">CSS Tricky Concepts</a>.<br>
           Style Example:
         </p>
         <div class="code-snippet">
@@ -143,7 +138,7 @@
        &#125;</pre>
         </div>
         <h5>Developing Grid Areas</h5>
-        <p>It may be difficult to track and read through number, which is why there is an options to name each of your rows and columns. It will also help with grid design planning as this example does:</p>
+        <p>It may be difficult to track and read through numbers, which is why there is an option to name each of your rows and columns. It will also help with grid design planning as this example does:</p>
         <div class="code-snippet">
           <pre class="code-text css-code">
 &#35;layout&#123;
@@ -172,8 +167,7 @@
         <pre class="code-text css-code">
 &#35;layout&#123;
        display: grid; 
-       grid: 100px 400px 100px / 200px 225px 200px;         
-        </pre>
+       grid: 100px 400px 100px / 200px 225px 200px;</pre>
       </div>
       <p>To add in the grid areas, use the order as follows: [start line name] "area names" track size. Repeat the order for each row in the grid then place a slash before begining the same process for the columns in the grid except without the areas names. Since they have been mentioned, it is not neccessary to restate the area names. Here is an example:</p>
       <div class="code-snippet">
@@ -187,7 +181,7 @@
         &#125;</pre>
       </div>
       <h4>Step Three: Placing Grid Items</h4>
-      <p>To place grid items inside the grid layout, there are two methods that can be follow depending on preference:</p>
+      <p>To place grid items inside the grid layout, there are two methods that can be followed depending on preference:</p>
       <h5>Method One: Lines</h5>
       <p>This method places grid items using the grid lines. You can specify the starting and ending lines for each item using the <b>grid-column</b> and <b>grid-row</b> properties. In the stylesheet, use the id name given to each of the grid items to specify these four properties:</p>
       <ul>
@@ -217,16 +211,16 @@
         <pre class="code-text css-code">
 &#35;one&#123; grid-area: 1 / 1 / 2 / span 3; &#125;</pre>
       </div>
-      <h3>Grid Behavior</h3>
+      <h3 class="exam-header title-css" id="grid-behave">Grid Behavior</h3>
       <p>Grid items can be adjust to position, size, and align themselves within the grid. This can be done using the following properties:</p>
-      <h4>Flow Direction</h4>
+      <h4 id="grid-flow">Flow Direction</h4>
       <p>By default, grid items are placed in the order they appear in the HTML document. However, you can change the flow direction using the <b>grid-auto-flow</b> property. The possible values are:</p>
       <ul>
         <li><b>row:</b> The default value. Items are placed in rows.</li>
         <li><b>column:</b> Items are placed in columns.</li>
         <li><b>dense:</b> Items are placed in the first available space.</li>
       </ul>
-      <h4>Spacing and Alignment</h4>
+      <h4 id="grid-align">Spacing and Alignment</h4>
       <p>Grid items can be aligned using the same properties as flexbox. The following properties can be used to align grid items:</p>
       <p>To align the grid items on the main axis, use the <b>justify-content</b> property which alters how space within the container moves around or between the grid items. This property can be used no matter what value is set to the <b>grid-flow</b> of the container. The alignment will apply to the container whether it is arranged horizontally or vertically. The property will be placed in the container id within the stylesheet. Here are just a few:</p>
         <ul>
@@ -283,49 +277,6 @@
         <li>align-self: right;
           <ul><li>The <em>right</em> value positions the grid item to the right of the cross axis.</li></ul>
         </ul>
-
-        <div class="code-snippet">
-          <pre class="code-text css-code">const blurWordArray = document.querySelectorAll(".blur-word");
-blurWordArray.forEach(element => {
-element.addEventListener("click", () => {
-element.classList.toggle("unblur-word");
-});
-});</pre>
-        </div>
-
-        <figure>
-          <img alt=" " src="/img/placeholder.svg"> 
-        </figure>
-        <h2>List Title</h2>
-        <ul>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-          <li>item
-            <ul>
-              <li>2nd level item</li>
-              <li>2nd level item</li>
-              <li>2nd level item</li>
-            </ul>
-          </li>
-        </ul>
-        
-        <h3>List Subtitle</h3>
-        
-        <ol>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-          <li>item
-            <ol>
-              <li>2nd level item</li>
-              <li>2nd level item</li>
-              <li>2nd level item</li>
-            </ol>
-          </li>
-        </ol>
         
       </section>
     </main>

@@ -225,6 +225,11 @@ main h1.info-h1 {
     box-shadow: .25rem .25rem 0 #FDFFFC;
 }
 
+code {
+    background-color: rgba(100, 100, 100, .2);
+    border: .05rem solid rgba(255, 255, 255, .2);
+}
+
 figure {
     border: .2rem solid #FDFFFC;
     box-shadow: .25rem .25rem 0 #FDFFFC;

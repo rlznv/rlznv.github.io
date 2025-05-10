@@ -150,6 +150,12 @@ ul.toc li a:hover {
     width: fit-content;
 }
 
+code {
+    background-color: rgba(100, 100, 100, .2);
+    border-radius: .2rem;
+    border: .05rem solid rgba(0, 0, 0, .2);
+}
+
 .exam-qa {
     border: .2rem solid #1c2021;
     box-shadow: .2rem .2rem 0 #1c2021;
