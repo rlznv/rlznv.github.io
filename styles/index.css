@@ -1,0 +1,116 @@
+body {
+    background-image: none;
+    letter-spacing: .05pt;
+    font-family: Arial;
+    font-size: 16px;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    grid-gap: .75em;
+    width: 44em;
+    transition: 1s;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: clamp(14rem, 17rem, 30vw);
+    padding: 1em;
+}
+
+#left {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+#nav-b {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    gap: 1em; 
+}
+
+p.about-me {
+    text-wrap: pretty;
+    margin: 0;
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+ul {
+    padding: 0 0 0 1.25rem;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+p.tag {
+    margin-top: -1.20em;
+    text-align: center;
+}
+
+h1.big-name {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 900;
+}
+    
+#nav-b .button {
+    display: block;
+    text-align: center;
+    line-height: 3.5em;
+    width: 40%;
+    text-decoration: none;
+    transition: .15s;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: .95rem;
+    padding: .25rem;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 545px) { 
+    
+    .index-container {
+        display: flex;
+        flex-flow: column;
+        max-width: 70vw;
+    }
+    
+    h1.big-name {
+        margin-top: .25em;
+    }
+    
+    p.tag {
+        margin: 0 0 1.75em 0;
+    }
+    
+    #left {
+        align-self: center;
+    }
+
+    #nav-b {
+        margin-bottom: .25em;
+    }
+
+    #nav-b .button {
+        font-size: .85rem;
+    }
+
+}
+
+    

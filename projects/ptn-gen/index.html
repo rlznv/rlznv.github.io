@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>x with the y generator (ptn edition)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        height: 95vh;
+        width: 95vw;
+        margin: 0 auto;
+        background-color: black;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      main {
+        display: flex;
+        flex-flow: column nowrap;
+        height: 100%;
+        width: 100%;
+        align-items: baseline;
+        align-content: center;
+        justify-content: center;
+      }
+      h1 {
+        display: inline-block;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 auto;
+        padding: 3rem;
+        font-weight: 900;
+      }
+      div.button {
+        display: inline-block;
+        margin: 0 auto;
+        border: .15rem solid white;
+        width: 30%;
+        padding: 1rem;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      div.button:hover {
+        cursor: pointer;
+        background-color: #ff0080;
+      }
+      #buttons {
+        width: 100%;
+        display: flex;
+      }
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        opacity: .7;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 20rem;
+        z-index: -50;
+      }
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .h-f-button {
+        position: fixed;
+        top: 5%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #000000;
+        border: 1px solid #fff;
+        color: #fff;
+        display: block;
+        text-align: center;
+        width: 60vw;
+        line-height: 3.5em;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-decoration: none;
+      }
+
+      .h-f-button:hover {
+        background-color: #ff0080;
+      }
+    </style>
+    <script>
+      let data = null;
+
+      async function loadData() {
+        try {
+          const response = await fetch("ptn.json");
+          data = await response.json();
+          return data;
+        }
+        catch (error) {
+          console.error("Error loading data:", error);
+        }
+      }
+
+      function randomizePhrase() {
+        const firstPart = data.firstPart
+        const secondPart = data.secondPart
+
+        let getRandom1 = Math.floor(Math.random() * firstPart.length);
+        let getRandom2 = Math.floor(Math.random() * secondPart.length);
+
+        while (firstPart[getRandom1].char === secondPart[getRandom2].char) {
+          if (Math.random() < .5) {
+            getRandom1 = Math.floor(Math.random() * firstPart.length);
+          } else {
+            getRandom2 = Math.floor(Math.random() * secondPart.length);
+          }
+        }
+
+        document.getElementById("partOne").textContent = firstPart[getRandom1].phrase;
+        document.getElementById("partTwo").textContent = secondPart[getRandom2].phrase;
+
+        const selectedFirstPart = firstPart[getRandom1];
+        const selectedSecondPart = secondPart[getRandom2];
+        currentFirstPartChar = selectedFirstPart.char;
+        currentSecondPartChar = selectedSecondPart.char;
+
+        updateImages();
+      }
+
+      function copyText() {
+        const text = document.getElementById("phrase").innerText;
+        navigator.clipboard.writeText(text);
+      }
+
+      document.addEventListener("keypress", event => {
+        if (event.code === "Space") {
+          randomizePhrase();
+        }
+      })
+
+      document.addEventListener("DOMContentLoaded", function() {
+        loadData().then(() => {
+          randomizePhrase();
+        })
+      });
+
+      function updateImages() {
+        if (currentFirstPartChar) {
+          const firstPartImg = document.getElementById("firstPartImg");
+          firstPartImg.src = `img/${currentFirstPartChar}.png`;
+        }
+        
+        if (currentSecondPartChar) {
+          const secondPartImg = document.getElementById("secondPartImg");
+          secondPartImg.src = `img/${currentSecondPartChar}.png`;
+        }
+      }
+    </script>
+  </head>
+  
+  <body>
+    <a href="/" class="h-f-button" id="top">Home</span></a>      
+    <main>
+      <h1 id="phrase">when you gonna stop <span id="partOne"></span> and <span id="partTwo"></span>?</h1>
+      <div id="buttons">
+        <div class="button" onclick="copyText()">copy</div>
+        <div class="button" onclick="randomizePhrase()">randomize</div>
+    </div>
+    </main>
+    <footer>
+      <img alt=" " id="firstPartImg">
+      <img alt=" " id="secondPartImg">
+    </footer>
+  </body>
+  
+</html>

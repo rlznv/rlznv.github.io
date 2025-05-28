@@ -1,0 +1,131 @@
+::selection {
+    background: #FFF49A;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translateY(0px);
+	}
+	50% {
+		box-shadow: 0 20px 15px 0px rgba(0,0,0,0.2);
+		transform: translateY(-15px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translateY(0px);
+	}
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #f18070, #fff49a);
+    color: #101218;
+    background-repeat: no-repeat;
+    transition: all 1s;
+    font-family: Arial;
+}
+
+#switch {
+    position: fixed;
+    height: 3rem;
+    width: 3rem;
+    background-repeat: no-repeat;
+    background-size: 2.25rem 2.25rem;
+    background-position: center;
+    top: .5rem;
+    right: .5rem;
+    transition: .15s;
+    background-image: url("/imgs/moon-white.svg");
+    background-color: rgba(241, 128, 112, .6);
+    border: 1px solid black;
+}
+
+#switch:hover {
+    cursor: pointer;
+    background-color: rgb(241, 128, 112);
+}
+
+#left {
+    background: white;
+    border: 1px solid black;
+    animation: float 7s ease-in-out infinite;
+}
+
+#nav-b .button {
+    background-color: rgba(241, 128, 112, .75);
+    border: 1px solid black;
+    color: white;
+}
+
+#nav-b .button:hover {
+    background-color: rgba(241, 128, 112, 1);
+}
+
+#right {
+    background: white;
+    border: 1px solid black;
+    animation: float 7s ease-in-out infinite;
+}
+
+.p-item {
+    background-color: white;
+    border-bottom: 1px dashed black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.p-item:first-of-type {
+    border-top: 1px solid black;
+}
+
+.p-item:last-of-type {
+    border-bottom: 1px solid black;
+}
+
+.p-item:hover:first-of-type {
+    border-top: 1px solid black;
+}
+
+.p-item:hover {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(-5px);
+    border-top: 1px dashed black;
+}
+
+.p-img {
+    border: .05rem solid #000;
+}
+
+.h-f-button {
+    border: 1px solid black;
+    background-color: rgba(241, 128, 112, .6);
+    color: white;
+}
+
+#top-but {
+    background: url("/imgs/arrow-up.svg") no-repeat center center;
+    background-size: contain;
+}
+
+#top-but:hover {
+    background: url("/imgs/arrow-up-white.svg") no-repeat center center;
+    background-size: contain;
+}
+
+a.t-link {
+    color: black;
+}
+
+a.t-link:hover {
+    background-color: rgba(241, 128, 112, 1);
+}
+
+a.inline-link {
+    color: #101218;
+    text-decoration: underline;
+}
+
+a.inline-link:hover {
+    color: white;
+    background-color: rgba(241, 128, 112, 1);
+}

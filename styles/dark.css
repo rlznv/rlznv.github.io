@@ -1,0 +1,103 @@
+::selection {
+    background: #ff0080;
+    color: #fff;
+}
+
+body {
+    background-color: #000000;
+    color: #fff;
+    font-family: Arial;
+}
+
+#switch {
+    position: fixed;
+    height: 3rem;
+    width: 3rem;
+    background-repeat: no-repeat;
+    background-size: 2.25em 2.25em;
+    background-position: center;
+    top: .5rem;
+    right: .5rem;
+    transition: .15s;
+    background-image: url("/imgs/sun-white.svg");
+    background-color: black;
+    border: 1px solid #ff0080;
+}
+
+#switch:hover {
+    cursor: pointer;
+    background-color: #ff0080;
+}
+
+#left, #right {
+    background-color: #000000;
+    border: 1px solid #ff0080;
+}
+
+#right {
+    background: black;
+}
+
+h1.big-txt {
+    color: #fff;
+}
+
+h2.p-title {
+    color: #ff0080;
+}
+
+.h-f-button {
+    background-color: #000000;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.h-f-button:hover {
+    background-color: #ff0080;
+}
+
+.p-item {
+    background-color: black;
+    border-bottom: 1px solid #fff;
+}
+
+.p-img {
+    border: .05rem solid #fff;
+}
+
+#top-but {
+    background: url("../imgs/arrow-up-white.svg") no-repeat center center;
+    background-size: contain;
+}
+
+#top-but:hover {
+    background: url("../imgs/arrow-up-pink.svg") no-repeat center center;
+    background-size: contain;
+}
+
+a.t-link {
+    color: #fff;
+}
+    
+a.t-link:hover {
+    background-color: #ff0080;
+}
+
+#nav-b .button {
+    border: 1px solid #fff;
+    background-color: #000000;
+    color: #fff;
+}
+
+#nav-b .button:hover {
+    background-color: #ff0080;
+}
+
+a.inline-link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+a.inline-link:hover {
+    background-color: #ff0080;
+}

@@ -1,0 +1,32 @@
+{
+    "firstPart" : [
+        {"phrase" : "giving chief grief", "char" : "chief"},
+        {"phrase" : "getting briefings from the little chiefling", "char" : "chief"},
+        {"phrase" : "being all pretty in discity", "char" : "chief"},
+        {"phrase" : "being a flagellant in front of the adjutant", "char" : "nightingale"},
+        {"phrase" : "reporting mcqueen's forgeries to the authorities", "char" : "mcqueen"},
+        {"phrase" : "making a mess with the seamstress", "char" : "garofano"}
+    ],
+
+    "secondPart" : [
+        {"phrase" : "study the humanities with someone who's lost her sanity", "char" : "raven"},
+        {"phrase" : "come talk to the specters with the funeral director", "char" : "oak"},
+        {"phrase" : "experience some maneuvers from a real loser", "char" : "shawn"},
+        {"phrase" : "come get catfished by someone you can't resist", "char" : "shawn"},
+        {"phrase" : "come get foul with the snow owl", "char" : "langley"},
+        {"phrase" : "come get gay with cabernet", "char" : "cabernet"},
+        {"phrase" : "come join cabernet at the buffet", "char" : "cabernet"},
+        {"phrase" : "come play with raye", "char" : "raven"},
+        {"phrase" : "come share a kiss with your hypnotherapist", "char" : "chameleon"},
+        {"phrase" : "cave in to the raven", "char" : "raven"},
+        {"phrase" : "come get inbetween the mcqueens", "char" : "mcqueen"},
+        {"phrase" : "sip on the nectar of the movie director", "char" : "deren"},
+        {"phrase" : "come watch a flick with the director chick", "char" : "deren"},
+        {"phrase" : "come make a mess with the seamstress", "char" : "garofano"},
+        {"phrase" : "come undress in front of the seamstress", "char" : "garofano"},
+        {"phrase" : "take a chancer on this dancer", "char" : "hamel"},
+        {"phrase" : "come for a whirl with lady pearl", "char" : "pearl"},
+        {"phrase" : "come get some relief with the hacker thief", "char" : "tetra"},
+        {"phrase" : "come make some bad habits with the robber rabbit", "char" : "pricilla"}
+    ]
+}
