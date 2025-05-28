@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Overused Grotesk", Arial, Helvetica, sans-serif;
+    font-family: "Overused Grotesk";
     src: url(/fonts/OverusedGrotesk-VF.ttf);
 }
 
@@ -11,7 +11,7 @@
 body {
     background-color: #000000;
     color: #fff;
-    font-family: "Overused Grotesk";
+    font-family: "Overused Grotesk", Arial, Helvetica, sans-serif;
 }
 
 #switch {
