@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Overused Grotesk", Arial, Helvetica, sans-serif;
+    src: url(/fonts/OverusedGrotesk-VF.ttf);
+}
+
 ::selection {
     background: #ff0080;
     color: #fff;
@@ -6,7 +11,7 @@
 body {
     background-color: #000000;
     color: #fff;
-    font-family: Arial;
+    font-family: "Overused Grotesk";
 }
 
 #switch {
