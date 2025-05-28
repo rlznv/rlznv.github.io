@@ -1,0 +1,116 @@
+@font-face {
+    font-family: CyberpunkWaifus;
+    src: url(CyberpunkWaifus.ttf);
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #f7c8c2, #cbd581);
+    background-color: #f7c8c2; /* enable this for pink green gradient */
+    /* background: url("bg.jpg") no-repeat center center fixed; enable for picture bg */
+    background-size: cover;
+    font-size: 1em;
+    font-family: CyberpunkWaifus; /* chrome and firefox render this font differently. firefox = more padding */
+    overflow: hidden; /* turn to hidden for smaller screens/laptop */
+    display: flex;
+    height: 100vh;
+}
+
+#time{
+	font-size: 82px;
+	text-align: center;
+	color: #02141a;
+    margin-bottom: .5rem;
+    margin-top: -1.25rem;
+}
+
+#container{
+    margin: auto;
+}
+
+p, li, a{
+    color: #00080b;
+    padding: 0;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    padding: .25em 0 .25em 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+a:hover{
+	color: #ffffff;
+	background: #f891be;
+    
+}
+
+.stacks{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    justify-content: center; 
+    margin-bottom: .5em;
+}
+
+.stacks p{
+    border-bottom: 1px solid #FDFDFD;
+    text-align: left;
+    margin: 0;
+}
+
+.list {
+    margin: 0 1em 0 1em; /* space between stacks */
+    width: 15vw;
+}
+
+.list ul {
+    margin: 0; /* spacing purposes */
+    padding: 0; /* centering purposes */
+}
+
+.list li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.buttons {
+    margin-top: 1rem; 
+    text-align: center;
+}
+
+.buttons p {
+    display: inline-block;
+    border: 1px solid #FDFDFD;
+    min-width: 18%;
+    margin: .25rem .25rem;
+    text-align: center;
+    overflow: hidden;
+    line-height: 1.25rem;
+}
+
+.search-bar {
+    margin-top: 1.30rem;
+}
+
+.search {
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #FDFDFD;
+    width: 40vw;
+    max-width: 400px;
+    height: 1.3rem;
+}
+
+.search:focus {
+    outline: none;
+}
+
+form{
+	text-align: center;
+}

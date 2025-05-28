@@ -5,7 +5,15 @@
         {"phrase" : "being all pretty in discity", "char" : "chief"},
         {"phrase" : "being a flagellant in front of the adjutant", "char" : "nightingale"},
         {"phrase" : "reporting mcqueen's forgeries to the authorities", "char" : "mcqueen"},
-        {"phrase" : "making a mess with the seamstress", "char" : "garofano"}
+        {"phrase" : "making a mess with the seamstress", "char" : "garofano"},
+        {"phrase" : "cleaning bedpans for anne", "char" : "anne"},
+        {"phrase" : "drinking apple juice with the fruity sleuth", "char" : "bianca"},
+        {"phrase" : "spreading rumors about the perfumer", "char" : "cassia"},
+        {"phrase" : "trying to make the lazy ass touch grass", "char" : "che"},
+        {"phrase" : "getting directives from the detective", "char" : "christina"},
+        {"phrase" : "getting bizarre with cinnabar", "char" : "cinnabar"},
+        {"phrase" : "hunting squirrels with the cowgirl", "char" : "korryn"},
+        {"phrase" : "visiting the scammer in the slammer", "char" : "baiyi"}
     ],
 
     "secondPart" : [
@@ -27,6 +35,21 @@
         {"phrase" : "take a chancer on this dancer", "char" : "hamel"},
         {"phrase" : "come for a whirl with lady pearl", "char" : "pearl"},
         {"phrase" : "come get some relief with the hacker thief", "char" : "tetra"},
-        {"phrase" : "come make some bad habits with the robber rabbit", "char" : "pricilla"}
+        {"phrase" : "come make some bad habits with the robber rabbit", "char" : "pricilla"},
+        {"phrase" : "come get shameful with angell", "char" : "angell"},
+        {"phrase" : "come get rid of some stressors with the hairdresser", "char" : "adela"},
+        {"phrase" : "come play the hero for zero", "char" : "000"},
+        {"phrase" : "come humor this perfumer", "char" : "cassia"},
+        {"phrase" : "come get bizarre with cinnabar", "char" : "cinnabar"},
+        {"phrase" : "dive into the cookie bar of cinnabar", "char" : "cinnabar"},
+        {"phrase" : "bring your butt to the weapon nut", "char" : "corso"},
+        {"phrase" : "come set your heart aflutter with this gem cutter", "char" : "chelsea"},
+        {"phrase" : "come share a kiss with the mythologist", "char" : "duruo"},
+        {"phrase" : "come have fun with the mythologist you can't resist", "char" : "duruo"},
+        {"phrase" : "come get taken to heaven by eleven", "char" : "eleven"},
+        {"phrase" : "come play guitar with a rock star", "char" : "joan"},
+        {"phrase" : "let the cowgirl make your toes curl", "char" : "korryn"},
+        {"phrase" : "come view something stellar with the eastian storyteller", "char" : "yugu"},
+        {"phrase" : "come take in the glamor of this scammer", "char" : "baiyi"}
     ]
 }

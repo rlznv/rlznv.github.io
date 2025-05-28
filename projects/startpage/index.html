@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="safe.css">
+  </head>
+
+  <body onload="startTime()">  
+  <div id="container">
+    <div id="time">
+      <script>
+      function startTime() {
+        var today=new Date();
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('time').innerHTML = h+" "+m+" "+s;
+        var t = setTimeout(function(){startTime()},500);
+      }
+
+      function checkTime(i) {
+        if (i<10) {i = "0" + i};
+        return i;
+      }
+      </script>
+    </div>
+	
+    <div class="stacks">
+      <div class="list" id="stack-1">
+        <p>web</p>
+          <ul>
+            <li><a href="https://www.tumblr.com/">tumblr</a></li>
+            <li><a href="https://reddit.com/r/pathtonowhere/">r/ptn</a></li>
+            <li><a href="https://reddit.com/">home</a></li>
+            <li><a href="#">[removed]</a></li>
+            <li><a href="https://s1n.gg/">s1n.gg</a></li>
+            <li><a href="https://minesweeper.online/">minesweeper</a></li>
+          </ul>
+      </div>
+      
+      <div class="list" id="stack-2">
+        <p>edu.</p>
+          <ul>
+            <li><a href="#">[removed]</a></li>
+            <li><a href="#">[removed]</a></li>
+            <li><a href="#">[removed]</a></li>
+            <li><a href="#">[removed]</a></li>
+            <li><a href="#">[removed]</a></li>
+            <li><a href="https://outlook.office.com/mail/">outlook</a></li>
+          </ul>
+      </div>
+    
+    <div class="list" id="stack-3">
+        <p>ent.</p>
+          <ul>
+            <li><a href="#">[removed]</a></li>
+            <li><a href="#">[removed]</a></li>
+            <li><a href="https://www.hulu.com/hub/home/">hulu</a></li>
+            <li><a href="#">[removed]</a></li>
+            <li><a href="#">[removed]</a></li>
+            <li><a href="#">[removed]</a></li>
+          </ul>
+      </div>
+      
+      <div class="list" id="stack-4">
+        <p>jp</p>
+          <ul>
+            <li><a href="https://jisho.org/">jisho</a></li>
+            <li><a href="https://www.deepl.com/translator/">deepl</a></li>
+            <li><a href="https://translate.google.com/">google tl</a></li>
+            <li><a href="https://kotu.io/tests/pitchAccent/perception/minimalPairs/">minimal pairs</a></li>
+            <li><a href="https://djtguide.github.io/grammar/dojgmain.html">dict. jp grammar</a></li>
+            <li><a href="https://djtguide.github.io/grammar/imabi.html">imabi</a></li>
+          </ul>
+      </div>
+
+    </div>
+	
+    <div class="buttons">
+      <p><a href="https://mail.google.com/">gmail</a></p>
+      <p><a href="https://drive.google.com/">drive</a></p>
+      <p><a href="#">[removed]</a></p>
+      <p><a href="#">[removed]</a></p>
+      <p><a href="#">[removed]</a></p>
+    </div>
+  
+    <div class="search-bar">
+      <form method="get" action="https://nyaa.si/"> 
+        <input class="search" name="q" type="text"> 
+      </form>
+    </div>
+    
+  </div> 
+  </body>
+</html>
