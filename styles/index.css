@@ -5,6 +5,7 @@ body {
     height: 100vh;
     overflow: hidden;
     display: flex;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
 }
@@ -16,6 +17,21 @@ main {
     transition: 1s;
     justify-content: center;
     align-items: center;
+}
+
+.icons {
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: .75rem;
+    padding: 0;
+    margin: -1rem auto 0 auto; 
+}
+
+.link-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    background-size: contain;
 }
 
 .box {
@@ -58,7 +74,7 @@ li {
 }
 
 p.tag {
-    margin-top: -1.20em;
+    margin-top: -1.5rem;
     text-align: center;
 }
 
@@ -95,7 +111,11 @@ h1.big-name {
     }
     
     p.tag {
-        margin: 0 0 1.75em 0;
+        margin: .5rem 0;
+    }
+
+    .icons {
+        margin: 1rem auto;
     }
     
     #left {

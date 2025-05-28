@@ -42,7 +42,7 @@ body {
     transition: .15s;
     background-image: url("/imgs/moon-white.svg");
     background-color: rgba(241, 128, 112, .6);
-    border: 1px solid black;
+    border: 1px solid #101218;
 }
 
 #switch:hover {
@@ -52,13 +52,13 @@ body {
 
 #left {
     background: white;
-    border: 1px solid black;
+    border: 1px solid #101218;
     animation: float 7s ease-in-out infinite;
 }
 
 #nav-b .button {
     background-color: rgba(241, 128, 112, .75);
-    border: 1px solid black;
+    border: 1px solid #101218;
     color: white;
 }
 
@@ -66,43 +66,55 @@ body {
     background-color: rgba(241, 128, 112, 1);
 }
 
+#lastfm {
+    background-image: url(/imgs/lastfm.svg);
+}
+
+#tumblr {
+    background-image: url(/imgs/tumblr.svg);
+}
+
+#github {
+    background-image: url(/imgs/github.svg);
+}
+
 #right {
     background: white;
-    border: 1px solid black;
+    border: 1px solid #101218;
     animation: float 7s ease-in-out infinite;
 }
 
 .p-item {
     background-color: white;
-    border-bottom: 1px dashed black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-bottom: 1px dashed #101218;
+    border-left: 1px solid #101218;
+    border-right: 1px solid #101218;
 }
 
 .p-item:first-of-type {
-    border-top: 1px solid black;
+    border-top: 1px solid #101218;
 }
 
 .p-item:last-of-type {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #101218;
 }
 
 .p-item:hover:first-of-type {
-    border-top: 1px solid black;
+    border-top: 1px solid #101218;
 }
 
 .p-item:hover {
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
     transform: translatey(-5px);
-    border-top: 1px dashed black;
+    border-top: 1px dashed #101218;
 }
 
 .p-img {
-    border: .05rem solid #000;
+    border: .05rem solid #101218;
 }
 
 .h-f-button {
-    border: 1px solid black;
+    border: 1px solid #101218;
     background-color: rgba(241, 128, 112, .6);
     color: white;
 }
@@ -118,7 +130,7 @@ body {
 }
 
 a.t-link {
-    color: black;
+    color: #101218;
 }
 
 a.t-link:hover {

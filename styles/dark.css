@@ -39,6 +39,30 @@ body {
     border: 1px solid #ff0080;
 }
 
+#lastfm {
+    background-image: url(/imgs/lastfm-white.svg);
+}
+
+#tumblr {
+    background-image: url(/imgs/tumblr-white.svg);
+}
+
+#github {
+    background-image: url(/imgs/github-white.svg);
+}
+
+#github:hover {
+    background-image: url(/imgs/github-pink.svg);
+}
+
+#lastfm:hover {
+    background-image: url(/imgs/lastfm-pink.svg);
+}
+
+#tumblr:hover {
+    background-image: url(/imgs/tumblr-pink.svg);
+}
+
 #right {
     background: black;
 }
