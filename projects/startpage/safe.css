@@ -114,3 +114,46 @@ a:hover{
 form{
 	text-align: center;
 }
+
+@media screen and (max-width: 900px) {
+
+    body {
+        width: 95vw;
+        margin: auto;
+    }
+
+    .container {
+        width: fit-content;
+        outline: 1rem solid green;
+    }
+
+    .stacks {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .list {
+        max-width: 100%;
+        width: auto;
+    }
+
+    .buttons {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .buttons p {
+        min-width: 30%;
+    }
+
+    .search {
+        width: 23.5rem;
+    }
+    
+}
